@@ -1,0 +1,7 @@
+activeProfile: default
+profiles:
+  default:
+    semanticModels:
+      autoclaims:
+        workspaceId: 9e818cab-e3c8-481c-bf38-1793992f9777
+        itemId: 15d41ed3-bee4-4f14-a898-b36ab248bc92

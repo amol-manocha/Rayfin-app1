@@ -1,0 +1,14 @@
+EVALUATE
+ADDCOLUMNS(
+    GROUPBY(
+        ADDCOLUMNS(
+            'claims_fact',
+            "MonthStart", DATE(YEAR('claims_fact'[Claim_Date]), MONTH('claims_fact'[Claim_Date]), 1)
+        ),
+        [MonthStart],
+        "ClaimCount", SUMX(CURRENTGROUP(), 1),
+        "TotalAmount", SUMX(CURRENTGROUP(), 'claims_fact'[Claim_Amount])
+    ),
+    "MonthLabel", FORMAT([MonthStart], "MMM YYYY")
+)
+ORDER BY [MonthStart]

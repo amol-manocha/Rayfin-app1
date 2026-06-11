@@ -1,0 +1,70 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - heading "All adjusters" [level=3] [ref=e4]
+      - paragraph [ref=e5]: Select an adjuster to see their workload
+    - table [ref=e6]:
+      - rowgroup [ref=e7]:
+        - row "Adjuster Region Experience Claims Open Claim Amount ▼" [ref=e8]:
+          - columnheader "Adjuster" [ref=e9] [cursor=pointer]:
+            - button "Adjuster" [ref=e10]
+          - columnheader "Region" [ref=e11] [cursor=pointer]:
+            - button "Region" [ref=e12]
+          - columnheader "Experience" [ref=e13] [cursor=pointer]:
+            - button "Experience" [ref=e14]
+          - columnheader "Claims" [ref=e15] [cursor=pointer]:
+            - button "Claims" [ref=e16]
+          - columnheader "Open Claim Amount ▼" [ref=e17] [cursor=pointer]:
+            - button "Open Claim Amount ▼" [ref=e18]:
+              - text: Open Claim Amount
+              - generic [ref=e19]: ▼
+          - columnheader [ref=e20]
+      - rowgroup [ref=e21]:
+        - row "Alicia Gomez West 12 yrs 112 $472,900 ›" [ref=e22]:
+          - cell "Alicia Gomez" [ref=e23]
+          - cell "West" [ref=e24]
+          - cell "12 yrs" [ref=e25]
+          - cell "112" [ref=e26]
+          - cell "$472,900" [ref=e27]
+          - cell "›" [ref=e28]
+        - row "Robert Espinoza West 19 yrs 107 $461,200 ›" [ref=e29]:
+          - cell "Robert Espinoza" [ref=e30]
+          - cell "West" [ref=e31]
+          - cell "19 yrs" [ref=e32]
+          - cell "107" [ref=e33]
+          - cell "$461,200" [ref=e34]
+          - cell "›" [ref=e35]
+        - row "Andrea Santiago West 3 yrs 108 $453,550 ›" [ref=e36]:
+          - cell "Andrea Santiago" [ref=e37]
+          - cell "West" [ref=e38]
+          - cell "3 yrs" [ref=e39]
+          - cell "108" [ref=e40]
+          - cell "$453,550" [ref=e41]
+          - cell "›" [ref=e42]
+        - row "Douglas Hines Northeast 13 yrs 112 $438,800 ›" [ref=e43]:
+          - cell "Douglas Hines" [ref=e44]
+          - cell "Northeast" [ref=e45]
+          - cell "13 yrs" [ref=e46]
+          - cell "112" [ref=e47]
+          - cell "$438,800" [ref=e48]
+          - cell "›" [ref=e49]
+        - row "Daniel Brooks Midwest 6 yrs 110 $401,300 ›" [ref=e50]:
+          - cell "Daniel Brooks" [ref=e51]
+          - cell "Midwest" [ref=e52]
+          - cell "6 yrs" [ref=e53]
+          - cell "110" [ref=e54]
+          - cell "$401,300" [ref=e55]
+          - cell "›" [ref=e56]
+        - row "Diana Walsh Midwest 17 yrs 106 $389,100 ›" [ref=e57]:
+          - cell "Diana Walsh" [ref=e58]
+          - cell "Midwest" [ref=e59]
+          - cell "17 yrs" [ref=e60]
+          - cell "106" [ref=e61]
+          - cell "$389,100" [ref=e62]
+          - cell "›" [ref=e63]
+  - generic [ref=e64]:
+    - text: "Header behavior: every column header becomes clickable. The active sort column shows a solid"
+    - generic [ref=e65]: ▼ desc
+    - text: or
+    - generic [ref=e66]: ▲ asc
+    - text: "arrow in indigo (here: Open Claim Amount, descending). Hovering any other header reveals a faint ▲▼ hint and a light highlight, so users discover it's sortable. Click cycles ascending → descending; only one column sorts at a time. Sorting is instant (client-side)."

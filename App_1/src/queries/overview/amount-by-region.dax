@@ -1,0 +1,11 @@
+EVALUATE
+TOPN(
+    20,
+    SUMMARIZECOLUMNS(
+        'adjuster_dim'[Region],
+        "TotalAmount", [Total Claim Amount],
+        "ClaimCount", [Claim Count]
+    ),
+    [TotalAmount], DESC
+)
+ORDER BY [TotalAmount] DESC

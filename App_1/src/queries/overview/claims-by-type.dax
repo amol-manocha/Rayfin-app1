@@ -1,0 +1,7 @@
+EVALUATE
+SUMMARIZECOLUMNS(
+    'claimtype_dim'[Claim_Type_Name],
+    "ClaimCount", [Claim Count],
+    "TotalAmount", [Total Claim Amount]
+)
+ORDER BY [ClaimCount] DESC

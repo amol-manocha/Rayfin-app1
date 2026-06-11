@@ -1,0 +1,14 @@
+EVALUATE
+TOPN(
+    8,
+    SUMMARIZECOLUMNS(
+        'customer_dim'[Customer_ID],
+        'customer_dim'[Customer_Name],
+        'customer_dim'[City],
+        'customer_dim'[State],
+        "ClaimCount", [Claim Count],
+        "TotalAmount", [Total Claim Amount]
+    ),
+    [ClaimCount], DESC
+)
+ORDER BY [ClaimCount] DESC

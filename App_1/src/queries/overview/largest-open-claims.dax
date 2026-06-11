@@ -1,0 +1,18 @@
+EVALUATE
+TOPN(
+    12,
+    CALCULATETABLE(
+        SUMMARIZECOLUMNS(
+            'claims_fact'[Claim_ID],
+            'customer_dim'[Customer_ID],
+            'customer_dim'[Customer_Name],
+            'claimtype_dim'[Claim_Type_Name],
+            'claims_fact'[Claim_Status],
+            'claims_fact'[Claim_Date],
+            "Amount", [Total Claim Amount]
+        ),
+        'claims_fact'[Claim_Status] = "Open"
+    ),
+    [Amount], DESC
+)
+ORDER BY [Amount] DESC

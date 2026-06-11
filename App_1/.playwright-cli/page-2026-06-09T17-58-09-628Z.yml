@@ -1,0 +1,302 @@
+- generic [ref=e9]:
+  - list [ref=e11]:
+    - listitem
+    - listitem
+    - listitem [ref=e12]:
+      - generic [ref=e14] [cursor=pointer]: Skip to main content
+  - banner [ref=e18]:
+    - generic [ref=e19]:
+      - button "App launcher" [ref=e21] [cursor=pointer]:
+        - img [ref=e24]
+      - link "Go to your default landing page" [ref=e27] [cursor=pointer]
+      - button "App_1, General" [ref=e29] [cursor=pointer]:
+        - generic [ref=e30]: App_1
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - img [ref=e38]
+            - img [ref=e41]
+          - generic [ref=e43]: General
+        - img [ref=e44]: 
+    - generic [ref=e46]:
+      - img [ref=e48]
+      - textbox "Global search" [ref=e50]:
+        - /placeholder: Search
+    - generic [ref=e52]:
+      - generic [ref=e53]:
+        - button "Focus mode" [ref=e54] [cursor=pointer]:
+          - img [ref=e57]
+        - button "Notifications" [ref=e59] [cursor=pointer]:
+          - img [ref=e62]
+          - generic [ref=e64]: "3"
+        - button "Settings" [ref=e65] [cursor=pointer]:
+          - img [ref=e68]
+        - button "Download" [ref=e70] [cursor=pointer]:
+          - img [ref=e73]
+        - button "Help & Support" [ref=e75] [cursor=pointer]:
+          - img [ref=e78]
+        - button "Help improve Fabric (preview)" [ref=e80] [cursor=pointer]:
+          - img [ref=e83]
+      - button "Account manager for" [ref=e87] [cursor=pointer]
+  - generic [ref=e96]:
+    - navigation [ref=e99]:
+      - menu "Sidebar" [ref=e100]:
+        - generic [ref=e101]:
+          - menuitem "Home" [ref=e103] [cursor=pointer]:
+            - generic [ref=e104]:
+              - img [ref=e106]
+              - generic [ref=e108]: Home
+          - generic [ref=e109]:
+            - menuitem "Copilot" [ref=e110] [cursor=pointer]:
+              - generic [ref=e113]: Copilot
+            - menuitem "Unpin Copilot" [ref=e114] [cursor=pointer]:
+              - img [ref=e117]
+          - generic [ref=e119]:
+            - menuitem "Create" [ref=e120] [cursor=pointer]:
+              - generic [ref=e121]:
+                - img [ref=e123]
+                - generic [ref=e125]: Create
+            - menuitem "Unpin Create" [ref=e126] [cursor=pointer]:
+              - img [ref=e129]
+          - generic [ref=e131]:
+            - menuitem "OneLake catalog" [ref=e132] [cursor=pointer]:
+              - generic [ref=e133]:
+                - img [ref=e135]
+                - generic [ref=e137]: OneLake catalog
+            - menuitem "Unpin OneLake catalog" [ref=e138] [cursor=pointer]:
+              - img [ref=e141]
+          - generic [ref=e143]:
+            - menuitem "Apps" [ref=e144] [cursor=pointer]:
+              - generic [ref=e145]:
+                - img [ref=e147]
+                - generic [ref=e149]: Apps
+            - menuitem "Unpin Apps" [ref=e150] [cursor=pointer]:
+              - img [ref=e153]
+          - separator [ref=e155]
+          - menuitem "Workspaces" [ref=e158] [cursor=pointer]:
+            - generic [ref=e159]:
+              - img [ref=e161]
+              - generic [ref=e163]: Workspaces
+          - menuitem "Amol_dev" [ref=e166] [cursor=pointer]:
+            - generic [ref=e170]: Amol_dev
+          - generic [ref=e171]:
+            - separator [ref=e172]
+            - menuitem "- Amol_dev" [ref=e175] [cursor=pointer]:
+              - button [ref=e177]:
+                - generic "Close" [ref=e178]:
+                  - img [ref=e180]
+            - menuitem "App_1 - Amol_dev" [ref=e185] [cursor=pointer]:
+              - generic [ref=e186]:
+                - button [ref=e187]:
+                  - generic "Close" [ref=e188]:
+                    - img [ref=e190]
+                - generic [ref=e193]: App_1
+            - menuitem "More options" [ref=e195] [cursor=pointer]:
+              - img [ref=e198]
+        - menuitem "Power BI" [ref=e203] [cursor=pointer]:
+          - generic [ref=e206]: Power BI
+    - main [ref=e208]:
+      - iframe [active] [ref=e214]:
+        - generic [ref=f10e7]:
+          - complementary [ref=f10e8]:
+            - toolbar "Ribbon" [ref=f10e9]:
+              - generic [ref=f10e13]:
+                - generic:
+                  - generic:
+                    - generic "Ribbon Tabs"
+                - generic [ref=f10e14]:
+                  - button "Open" [ref=f10e15]:
+                    - img [ref=f10e17]
+                    - generic [ref=f10e19]: Open
+                  - button "Refresh" [ref=f10e20]:
+                    - img [ref=f10e22]
+                    - generic [ref=f10e24]: Refresh
+                  - button "Manage app" [ref=f10e25]:
+                    - generic [ref=f10e26]: Manage app
+                  - button "Share" [ref=f10e27]:
+                    - img [ref=f10e29]
+                    - text: Share
+                    - img [ref=f10e32]
+          - iframe [active] [ref=f10e37]:
+            - generic [ref=f11e3]:
+              - complementary [ref=f11e4]:
+                - generic [ref=f11e5]:
+                  - img [ref=f11e7]
+                  - generic [ref=f11e10]:
+                    - paragraph [ref=f11e11]: Claims Insight
+                    - paragraph [ref=f11e12]: Investigation workbench
+                - navigation [ref=f11e13]:
+                  - button "Book Overview" [ref=f11e14]:
+                    - img [ref=f11e15]
+                    - generic [ref=f11e20]: Book Overview
+                  - button "Adjuster Directory" [ref=f11e21]:
+                    - img [ref=f11e22]
+                    - generic [ref=f11e27]: Adjuster Directory
+                - button "Collapse navigation" [ref=f11e28]:
+                  - img [ref=f11e29]
+                  - generic [ref=f11e32]: Collapse
+              - generic [ref=f11e33]:
+                - banner [ref=f11e34]:
+                  - navigation "Breadcrumb" [ref=f11e36]:
+                    - list [ref=f11e37]:
+                      - listitem [ref=f11e38]:
+                        - button "Book Overview" [ref=f11e841]
+                      - listitem [ref=f11e842]:
+                        - img [ref=f11e843]
+                        - button "Adjuster Directory" [ref=f11e1083]
+                      - listitem [ref=f11e1084]:
+                        - img [ref=f11e1085]
+                        - button "Alicia Gomez" [ref=f11e2909]
+                      - listitem [ref=f11e2910]:
+                        - img [ref=f11e2911]
+                        - generic [ref=f11e2913]: Claim 6953
+                  - generic [ref=f11e41]:
+                    - img [ref=f11e42]
+                    - textbox "Search claims, customers, adjusters…" [ref=f11e45]
+                  - button "Switch to dark mode" [ref=f11e46]:
+                    - img [ref=f11e47]
+                - main [ref=f11e49]:
+                  - generic [ref=f11e2914]:
+                    - generic [ref=f11e2915]:
+                      - button "Back to Alicia Gomez" [ref=f11e2916]:
+                        - img [ref=f11e2917]
+                        - text: Back to Alicia Gomez
+                      - generic [ref=f11e2919]:
+                        - generic [ref=f11e2920]:
+                          - generic [ref=f11e2921]: Claim 360
+                          - generic [ref=f11e2922]:
+                            - heading "Claim 6953" [level=1] [ref=f11e2923]
+                            - generic [ref=f11e2924]: Open
+                        - generic [ref=f11e2927]:
+                          - generic [ref=f11e2928]:
+                            - paragraph [ref=f11e2929]: Claim amount
+                            - paragraph [ref=f11e2930]: $30,950
+                          - generic [ref=f11e2931]:
+                            - paragraph [ref=f11e2932]: Filed
+                            - paragraph [ref=f11e2933]: Mar 15, 2026
+                    - generic [ref=f11e2934]:
+                      - generic [ref=f11e2935]:
+                        - generic [ref=f11e2937]:
+                          - heading "Claim in context" [level=3] [ref=f11e2938]
+                          - paragraph [ref=f11e2939]: How this claim compares to similar claims
+                        - list [ref=f11e2941]:
+                          - listitem [ref=f11e2942]:
+                            - generic [ref=f11e2943]:
+                              - generic [ref=f11e2944]: This claim
+                              - generic [ref=f11e2945]: $30,950
+                          - listitem [ref=f11e2948]:
+                            - generic [ref=f11e2949]:
+                              - generic [ref=f11e2950]: Liability average
+                              - generic [ref=f11e2951]: $51,438
+                          - listitem [ref=f11e2954]:
+                            - generic [ref=f11e2955]:
+                              - generic [ref=f11e2956]: Book average
+                              - generic [ref=f11e2957]: $18,997
+                          - listitem [ref=f11e2960]:
+                            - generic [ref=f11e2961]:
+                              - generic [ref=f11e2962]: Largest Liability
+                              - generic [ref=f11e2963]: $126,500
+                      - generic [ref=f11e2966]:
+                        - generic [ref=f11e2968]:
+                          - heading "Coverage" [level=3] [ref=f11e2969]
+                          - paragraph [ref=f11e2970]: Claim amount vs policy limit
+                        - generic [ref=f11e2972]:
+                          - img "Coverage utilization 20.6%" [ref=f11e2973]:
+                            - img [ref=f11e2974]
+                            - generic [ref=f11e2977]:
+                              - generic [ref=f11e2978]: 20.6%
+                              - generic [ref=f11e2979]: of limit
+                          - generic [ref=f11e2980]:
+                            - paragraph [ref=f11e2981]:
+                              - text: $30,950
+                              - generic [ref=f11e2982]: / $150,000
+                            - paragraph [ref=f11e2983]: Within coverage limit
+                    - generic [ref=f11e2984]:
+                      - generic [ref=f11e2985]:
+                        - heading "Customer" [level=3] [ref=f11e2988]
+                        - generic [ref=f11e2990]:
+                          - generic [ref=f11e2991]:
+                            - term [ref=f11e2992]: Name
+                            - definition [ref=f11e2993]:
+                              - button "Isabella Lewis" [ref=f11e2994]:
+                                - generic [ref=f11e2995]: Isabella Lewis
+                          - generic [ref=f11e2996]:
+                            - term [ref=f11e2997]: Age
+                            - definition [ref=f11e2998]: "35"
+                          - generic [ref=f11e2999]:
+                            - term [ref=f11e3000]: Gender
+                            - definition [ref=f11e3001]: Female
+                          - generic [ref=f11e3002]:
+                            - term [ref=f11e3003]: Location
+                            - definition [ref=f11e3004]: New York, NY
+                      - generic [ref=f11e3005]:
+                        - heading "Vehicle" [level=3] [ref=f11e3008]
+                        - generic [ref=f11e3010]:
+                          - generic [ref=f11e3011]:
+                            - term [ref=f11e3012]: Make & model
+                            - definition [ref=f11e3013]: Jeep Wrangler
+                          - generic [ref=f11e3014]:
+                            - term [ref=f11e3015]: Year
+                            - definition [ref=f11e3016]: "2020"
+                          - generic [ref=f11e3017]:
+                            - term [ref=f11e3018]: Body
+                            - definition [ref=f11e3019]: SUV
+                          - generic [ref=f11e3020]:
+                            - term [ref=f11e3021]: Value
+                            - definition [ref=f11e3022]: $33,800
+                          - generic [ref=f11e3023]:
+                            - term [ref=f11e3024]: VIN
+                            - definition [ref=f11e3025]: 1HGBH41JXMN000307
+                      - generic [ref=f11e3026]:
+                        - heading "Policy" [level=3] [ref=f11e3029]
+                        - generic [ref=f11e3031]:
+                          - generic [ref=f11e3032]:
+                            - term [ref=f11e3033]: Policy
+                            - definition [ref=f11e3034]: POL-100669
+                          - generic [ref=f11e3035]:
+                            - term [ref=f11e3036]: Type
+                            - definition [ref=f11e3037]: Collision
+                          - generic [ref=f11e3038]:
+                            - term [ref=f11e3039]: Coverage limit
+                            - definition [ref=f11e3040]: $150,000
+                          - generic [ref=f11e3041]:
+                            - term [ref=f11e3042]: Term
+                            - definition [ref=f11e3043]: Feb 17, 2025 – Feb 17, 2026
+                      - generic [ref=f11e3044]:
+                        - heading "Handling" [level=3] [ref=f11e3047]
+                        - generic [ref=f11e3049]:
+                          - generic [ref=f11e3050]:
+                            - term [ref=f11e3051]: Adjuster
+                            - definition [ref=f11e3052]:
+                              - button "Alicia Gomez" [ref=f11e3053]:
+                                - generic [ref=f11e3054]: Alicia Gomez
+                          - generic [ref=f11e3055]:
+                            - term [ref=f11e3056]: Region
+                            - definition [ref=f11e3057]: West
+                          - generic [ref=f11e3058]:
+                            - term [ref=f11e3059]: Repair shop
+                            - definition [ref=f11e3060]: Pinnacle Paint & Body
+                          - generic [ref=f11e3061]:
+                            - term [ref=f11e3062]: Network
+                            - definition [ref=f11e3063]: Independent
+                          - generic [ref=f11e3064]:
+                            - term [ref=f11e3065]: Avg repair days
+                            - definition [ref=f11e3066]: "6"
+                          - generic [ref=f11e3067]:
+                            - term [ref=f11e3068]: Specialty
+                            - definition [ref=f11e3069]: SUV & EV Repair
+                    - generic [ref=f11e3070]:
+                      - generic [ref=f11e3072]:
+                        - heading "Notes" [level=3] [ref=f11e3073]:
+                          - generic [ref=f11e3074]:
+                            - img [ref=f11e3075]
+                            - text: Notes
+                        - paragraph [ref=f11e3077]: Shared notes on this claim — visible to everyone in the workspace
+                      - generic [ref=f11e3078]:
+                        - generic [ref=f11e3079]:
+                          - textbox "Add a note about this claim…" [active] [ref=f11e3080]
+                          - generic [ref=f11e3081]:
+                            - paragraph [ref=f11e3082]: Posting as amolmanocha@microsoft.com
+                            - button "Save note" [disabled] [ref=f11e3083]:
+                              - img [ref=f11e3084]
+                              - text: Save note
+                        - paragraph [ref=f11e3087]: No notes yet — add the first one.

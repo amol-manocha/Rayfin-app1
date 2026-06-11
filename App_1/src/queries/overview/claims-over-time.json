@@ -1,0 +1,22 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "width": "container",
+    "height": "container",
+    "mark": { "type": "area", "line": true, "tooltip": true },
+    "encoding": {
+        "x": {
+            "field": "MonthStart",
+            "type": "temporal",
+            "axis": { "title": null, "grid": false, "tickCount": 8 }
+        },
+        "y": {
+            "field": "ClaimCount",
+            "type": "quantitative",
+            "axis": { "title": null }
+        },
+        "tooltip": [
+            { "field": "MonthLabel", "type": "nominal", "title": "Month" },
+            { "field": "ClaimCount", "type": "quantitative" }
+        ]
+    }
+}

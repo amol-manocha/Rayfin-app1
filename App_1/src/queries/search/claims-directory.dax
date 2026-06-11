@@ -1,0 +1,10 @@
+EVALUATE
+SUMMARIZECOLUMNS(
+    'claims_fact'[Claim_ID],
+    'customer_dim'[Customer_ID],
+    'customer_dim'[Customer_Name],
+    'claimtype_dim'[Claim_Type_Name],
+    'claims_fact'[Claim_Status],
+    "Amount", [Total Claim Amount]
+)
+ORDER BY 'claims_fact'[Claim_ID] ASC

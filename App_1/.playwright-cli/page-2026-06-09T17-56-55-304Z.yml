@@ -1,0 +1,361 @@
+- generic [ref=e9]:
+  - list [ref=e11]:
+    - listitem
+    - listitem
+    - listitem [ref=e12]:
+      - generic [ref=e14] [cursor=pointer]: Skip to main content
+  - banner [ref=e18]:
+    - generic [ref=e19]:
+      - button "App launcher" [ref=e21] [cursor=pointer]:
+        - img [ref=e24]
+      - link "Go to your default landing page" [ref=e27] [cursor=pointer]
+      - button "App_1, General" [ref=e29] [cursor=pointer]:
+        - generic [ref=e30]: App_1
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - img [ref=e38]
+            - img [ref=e41]
+          - generic [ref=e43]: General
+        - img [ref=e44]: 
+    - generic [ref=e46]:
+      - img [ref=e48]
+      - textbox "Global search" [ref=e50]:
+        - /placeholder: Search
+    - generic [ref=e52]:
+      - generic [ref=e53]:
+        - button "Focus mode" [ref=e54] [cursor=pointer]:
+          - img [ref=e57]
+        - button "Notifications" [ref=e59] [cursor=pointer]:
+          - img [ref=e62]
+          - generic [ref=e64]: "3"
+        - button "Settings" [ref=e65] [cursor=pointer]:
+          - img [ref=e68]
+        - button "Download" [ref=e70] [cursor=pointer]:
+          - img [ref=e73]
+        - button "Help & Support" [ref=e75] [cursor=pointer]:
+          - img [ref=e78]
+        - button "Help improve Fabric (preview)" [ref=e80] [cursor=pointer]:
+          - img [ref=e83]
+      - button "Account manager for" [ref=e87] [cursor=pointer]
+  - generic [ref=e96]:
+    - navigation [ref=e99]:
+      - menu "Sidebar" [ref=e100]:
+        - generic [ref=e101]:
+          - menuitem "Home" [ref=e103] [cursor=pointer]:
+            - generic [ref=e104]:
+              - img [ref=e106]
+              - generic [ref=e108]: Home
+          - generic [ref=e109]:
+            - menuitem "Copilot" [ref=e110] [cursor=pointer]:
+              - generic [ref=e113]: Copilot
+            - menuitem "Unpin Copilot" [ref=e114] [cursor=pointer]:
+              - img [ref=e117]
+          - generic [ref=e119]:
+            - menuitem "Create" [ref=e120] [cursor=pointer]:
+              - generic [ref=e121]:
+                - img [ref=e123]
+                - generic [ref=e125]: Create
+            - menuitem "Unpin Create" [ref=e126] [cursor=pointer]:
+              - img [ref=e129]
+          - generic [ref=e131]:
+            - menuitem "OneLake catalog" [ref=e132] [cursor=pointer]:
+              - generic [ref=e133]:
+                - img [ref=e135]
+                - generic [ref=e137]: OneLake catalog
+            - menuitem "Unpin OneLake catalog" [ref=e138] [cursor=pointer]:
+              - img [ref=e141]
+          - generic [ref=e143]:
+            - menuitem "Apps" [ref=e144] [cursor=pointer]:
+              - generic [ref=e145]:
+                - img [ref=e147]
+                - generic [ref=e149]: Apps
+            - menuitem "Unpin Apps" [ref=e150] [cursor=pointer]:
+              - img [ref=e153]
+          - separator [ref=e155]
+          - menuitem "Workspaces" [ref=e158] [cursor=pointer]:
+            - generic [ref=e159]:
+              - img [ref=e161]
+              - generic [ref=e163]: Workspaces
+          - menuitem "Amol_dev" [ref=e166] [cursor=pointer]:
+            - generic [ref=e170]: Amol_dev
+          - generic [ref=e171]:
+            - separator [ref=e172]
+            - menuitem "- Amol_dev" [ref=e175] [cursor=pointer]:
+              - button [ref=e177]:
+                - generic "Close" [ref=e178]:
+                  - img [ref=e180]
+            - menuitem "App_1 - Amol_dev" [ref=e185] [cursor=pointer]:
+              - generic [ref=e186]:
+                - button [ref=e187]:
+                  - generic "Close" [ref=e188]:
+                    - img [ref=e190]
+                - generic [ref=e193]: App_1
+            - menuitem "More options" [ref=e195] [cursor=pointer]:
+              - img [ref=e198]
+        - menuitem "Power BI" [ref=e203] [cursor=pointer]:
+          - generic [ref=e206]: Power BI
+    - main [ref=e208]:
+      - iframe [active] [ref=e214]:
+        - generic [ref=f10e7]:
+          - complementary [ref=f10e8]:
+            - toolbar "Ribbon" [ref=f10e9]:
+              - generic [ref=f10e13]:
+                - generic:
+                  - generic:
+                    - generic "Ribbon Tabs"
+                - generic [ref=f10e14]:
+                  - button "Open" [ref=f10e15]:
+                    - img [ref=f10e17]
+                    - generic [ref=f10e19]: Open
+                  - button "Refresh" [ref=f10e20]:
+                    - img [ref=f10e22]
+                    - generic [ref=f10e24]: Refresh
+                  - button "Manage app" [ref=f10e25]:
+                    - generic [ref=f10e26]: Manage app
+                  - button "Share" [ref=f10e27]:
+                    - img [ref=f10e29]
+                    - text: Share
+                    - img [ref=f10e32]
+          - iframe [active] [ref=f10e37]:
+            - generic [ref=f11e3]:
+              - complementary [ref=f11e4]:
+                - generic [ref=f11e5]:
+                  - img [ref=f11e7]
+                  - generic [ref=f11e10]:
+                    - paragraph [ref=f11e11]: Claims Insight
+                    - paragraph [ref=f11e12]: Investigation workbench
+                - navigation [ref=f11e13]:
+                  - button "Book Overview" [ref=f11e14]:
+                    - img [ref=f11e15]
+                    - generic [ref=f11e20]: Book Overview
+                  - button "Adjuster Directory" [active] [ref=f11e21]:
+                    - img [ref=f11e22]
+                    - generic [ref=f11e27]: Adjuster Directory
+                - button "Collapse navigation" [ref=f11e28]:
+                  - img [ref=f11e29]
+                  - generic [ref=f11e32]: Collapse
+              - generic [ref=f11e33]:
+                - banner [ref=f11e34]:
+                  - navigation "Breadcrumb" [ref=f11e36]:
+                    - list [ref=f11e37]:
+                      - listitem [ref=f11e38]:
+                        - button "Book Overview" [ref=f11e841]
+                      - listitem [ref=f11e842]:
+                        - img [ref=f11e843]
+                        - generic [ref=f11e845]: Adjuster Directory
+                  - generic [ref=f11e41]:
+                    - img [ref=f11e42]
+                    - textbox "Search claims, customers, adjusters…" [ref=f11e45]
+                  - button "Switch to dark mode" [ref=f11e46]:
+                    - img [ref=f11e47]
+                - main [ref=f11e49]:
+                  - generic [ref=f11e846]:
+                    - generic [ref=f11e847]:
+                      - button "Back to Book Overview" [ref=f11e848]:
+                        - img [ref=f11e849]
+                        - text: Back to Book Overview
+                      - generic [ref=f11e852]:
+                        - generic [ref=f11e853]: Adjuster Directory
+                        - heading "Adjusters" [level=1] [ref=f11e855]
+                    - generic [ref=f11e856]:
+                      - generic [ref=f11e858]:
+                        - heading "All adjusters" [level=3] [ref=f11e859]
+                        - paragraph [ref=f11e860]: Select an adjuster to see their workload
+                      - table [ref=f11e864]:
+                        - rowgroup [ref=f11e865]:
+                          - row "Adjuster Region Experience Claims" [ref=f11e866]:
+                            - columnheader "Adjuster" [ref=f11e867]
+                            - columnheader "Region" [ref=f11e868]
+                            - columnheader "Experience" [ref=f11e869]
+                            - columnheader "Claims" [ref=f11e870]
+                            - columnheader [ref=f11e871]
+                        - rowgroup [ref=f11e872]:
+                          - row "Alicia Gomez West 12 yrs 112" [ref=f11e873] [cursor=pointer]:
+                            - cell "Alicia Gomez" [ref=f11e874]:
+                              - button "Alicia Gomez" [ref=f11e875]:
+                                - generic [ref=f11e876]: Alicia Gomez
+                            - cell "West" [ref=f11e877]
+                            - cell "12 yrs" [ref=f11e878]
+                            - cell "112" [ref=f11e879]
+                            - cell [ref=f11e880]:
+                              - img [ref=f11e881]
+                          - row "Andrea Santiago West 3 yrs 108" [ref=f11e883] [cursor=pointer]:
+                            - cell "Andrea Santiago" [ref=f11e884]:
+                              - button "Andrea Santiago" [ref=f11e885]:
+                                - generic [ref=f11e886]: Andrea Santiago
+                            - cell "West" [ref=f11e887]
+                            - cell "3 yrs" [ref=f11e888]
+                            - cell "108" [ref=f11e889]
+                            - cell [ref=f11e890]:
+                              - img [ref=f11e891]
+                          - row "Angela Mendez South 15 yrs 92" [ref=f11e893] [cursor=pointer]:
+                            - cell "Angela Mendez" [ref=f11e894]:
+                              - button "Angela Mendez" [ref=f11e895]:
+                                - generic [ref=f11e896]: Angela Mendez
+                            - cell "South" [ref=f11e897]
+                            - cell "15 yrs" [ref=f11e898]
+                            - cell "92" [ref=f11e899]
+                            - cell [ref=f11e900]:
+                              - img [ref=f11e901]
+                          - row "Brian Hoffman South 3 yrs 89" [ref=f11e903] [cursor=pointer]:
+                            - cell "Brian Hoffman" [ref=f11e904]:
+                              - button "Brian Hoffman" [ref=f11e905]:
+                                - generic [ref=f11e906]: Brian Hoffman
+                            - cell "South" [ref=f11e907]
+                            - cell "3 yrs" [ref=f11e908]
+                            - cell "89" [ref=f11e909]
+                            - cell [ref=f11e910]:
+                              - img [ref=f11e911]
+                          - row "Craig Dunn Northeast 2 yrs 92" [ref=f11e913] [cursor=pointer]:
+                            - cell "Craig Dunn" [ref=f11e914]:
+                              - button "Craig Dunn" [ref=f11e915]:
+                                - generic [ref=f11e916]: Craig Dunn
+                            - cell "Northeast" [ref=f11e917]
+                            - cell "2 yrs" [ref=f11e918]
+                            - cell "92" [ref=f11e919]
+                            - cell [ref=f11e920]:
+                              - img [ref=f11e921]
+                          - row "Cynthia Russo South 15 yrs 75" [ref=f11e923] [cursor=pointer]:
+                            - cell "Cynthia Russo" [ref=f11e924]:
+                              - button "Cynthia Russo" [ref=f11e925]:
+                                - generic [ref=f11e926]: Cynthia Russo
+                            - cell "South" [ref=f11e927]
+                            - cell "15 yrs" [ref=f11e928]
+                            - cell "75" [ref=f11e929]
+                            - cell [ref=f11e930]:
+                              - img [ref=f11e931]
+                          - row "Daniel Brooks Midwest 6 yrs 110" [ref=f11e933] [cursor=pointer]:
+                            - cell "Daniel Brooks" [ref=f11e934]:
+                              - button "Daniel Brooks" [ref=f11e935]:
+                                - generic [ref=f11e936]: Daniel Brooks
+                            - cell "Midwest" [ref=f11e937]
+                            - cell "6 yrs" [ref=f11e938]
+                            - cell "110" [ref=f11e939]
+                            - cell [ref=f11e940]:
+                              - img [ref=f11e941]
+                          - row "Diana Walsh Midwest 17 yrs 106" [ref=f11e943] [cursor=pointer]:
+                            - cell "Diana Walsh" [ref=f11e944]:
+                              - button "Diana Walsh" [ref=f11e945]:
+                                - generic [ref=f11e946]: Diana Walsh
+                            - cell "Midwest" [ref=f11e947]
+                            - cell "17 yrs" [ref=f11e948]
+                            - cell "106" [ref=f11e949]
+                            - cell [ref=f11e950]:
+                              - img [ref=f11e951]
+                          - row "Douglas Hines Northeast 13 yrs 112" [ref=f11e953] [cursor=pointer]:
+                            - cell "Douglas Hines" [ref=f11e954]:
+                              - button "Douglas Hines" [ref=f11e955]:
+                                - generic [ref=f11e956]: Douglas Hines
+                            - cell "Northeast" [ref=f11e957]
+                            - cell "13 yrs" [ref=f11e958]
+                            - cell "112" [ref=f11e959]
+                            - cell [ref=f11e960]:
+                              - img [ref=f11e961]
+                          - row "Helen Zhao West 10 yrs 101" [ref=f11e963] [cursor=pointer]:
+                            - cell "Helen Zhao" [ref=f11e964]:
+                              - button "Helen Zhao" [ref=f11e965]:
+                                - generic [ref=f11e966]: Helen Zhao
+                            - cell "West" [ref=f11e967]
+                            - cell "10 yrs" [ref=f11e968]
+                            - cell "101" [ref=f11e969]
+                            - cell [ref=f11e970]:
+                              - img [ref=f11e971]
+                          - row "Janet Harmon South 8 yrs 87" [ref=f11e973] [cursor=pointer]:
+                            - cell "Janet Harmon" [ref=f11e974]:
+                              - button "Janet Harmon" [ref=f11e975]:
+                                - generic [ref=f11e976]: Janet Harmon
+                            - cell "South" [ref=f11e977]
+                            - cell "8 yrs" [ref=f11e978]
+                            - cell "87" [ref=f11e979]
+                            - cell [ref=f11e980]:
+                              - img [ref=f11e981]
+                          - row "Jared Mills South 4 yrs 102" [ref=f11e983] [cursor=pointer]:
+                            - cell "Jared Mills" [ref=f11e984]:
+                              - button "Jared Mills" [ref=f11e985]:
+                                - generic [ref=f11e986]: Jared Mills
+                            - cell "South" [ref=f11e987]
+                            - cell "4 yrs" [ref=f11e988]
+                            - cell "102" [ref=f11e989]
+                            - cell [ref=f11e990]:
+                              - img [ref=f11e991]
+                          - row "Marcus Reed South 8 yrs 87" [ref=f11e993] [cursor=pointer]:
+                            - cell "Marcus Reed" [ref=f11e994]:
+                              - button "Marcus Reed" [ref=f11e995]:
+                                - generic [ref=f11e996]: Marcus Reed
+                            - cell "South" [ref=f11e997]
+                            - cell "8 yrs" [ref=f11e998]
+                            - cell "87" [ref=f11e999]
+                            - cell [ref=f11e1000]:
+                              - img [ref=f11e1001]
+                          - row "Michelle Tanaka Northeast 2 yrs 92" [ref=f11e1003] [cursor=pointer]:
+                            - cell "Michelle Tanaka" [ref=f11e1004]:
+                              - button "Michelle Tanaka" [ref=f11e1005]:
+                                - generic [ref=f11e1006]: Michelle Tanaka
+                            - cell "Northeast" [ref=f11e1007]
+                            - cell "2 yrs" [ref=f11e1008]
+                            - cell "92" [ref=f11e1009]
+                            - cell [ref=f11e1010]:
+                              - img [ref=f11e1011]
+                          - row "Nina Patel Northeast 9 yrs 97" [ref=f11e1013] [cursor=pointer]:
+                            - cell "Nina Patel" [ref=f11e1014]:
+                              - button "Nina Patel" [ref=f11e1015]:
+                                - generic [ref=f11e1016]: Nina Patel
+                            - cell "Northeast" [ref=f11e1017]
+                            - cell "9 yrs" [ref=f11e1018]
+                            - cell "97" [ref=f11e1019]
+                            - cell [ref=f11e1020]:
+                              - img [ref=f11e1021]
+                          - row "Owen Carter Midwest 13 yrs 94" [ref=f11e1023] [cursor=pointer]:
+                            - cell "Owen Carter" [ref=f11e1024]:
+                              - button "Owen Carter" [ref=f11e1025]:
+                                - generic [ref=f11e1026]: Owen Carter
+                            - cell "Midwest" [ref=f11e1027]
+                            - cell "13 yrs" [ref=f11e1028]
+                            - cell "94" [ref=f11e1029]
+                            - cell [ref=f11e1030]:
+                              - img [ref=f11e1031]
+                          - row "Priya Narang Northeast 15 yrs 90" [ref=f11e1033] [cursor=pointer]:
+                            - cell "Priya Narang" [ref=f11e1034]:
+                              - button "Priya Narang" [ref=f11e1035]:
+                                - generic [ref=f11e1036]: Priya Narang
+                            - cell "Northeast" [ref=f11e1037]
+                            - cell "15 yrs" [ref=f11e1038]
+                            - cell "90" [ref=f11e1039]
+                            - cell [ref=f11e1040]:
+                              - img [ref=f11e1041]
+                          - row "Robert Espinoza West 19 yrs 107" [ref=f11e1043] [cursor=pointer]:
+                            - cell "Robert Espinoza" [ref=f11e1044]:
+                              - button "Robert Espinoza" [ref=f11e1045]:
+                                - generic [ref=f11e1046]: Robert Espinoza
+                            - cell "West" [ref=f11e1047]
+                            - cell "19 yrs" [ref=f11e1048]
+                            - cell "107" [ref=f11e1049]
+                            - cell [ref=f11e1050]:
+                              - img [ref=f11e1051]
+                          - row "Scott Ibarra Midwest 10 yrs 90" [ref=f11e1053] [cursor=pointer]:
+                            - cell "Scott Ibarra" [ref=f11e1054]:
+                              - button "Scott Ibarra" [ref=f11e1055]:
+                                - generic [ref=f11e1056]: Scott Ibarra
+                            - cell "Midwest" [ref=f11e1057]
+                            - cell "10 yrs" [ref=f11e1058]
+                            - cell "90" [ref=f11e1059]
+                            - cell [ref=f11e1060]:
+                              - img [ref=f11e1061]
+                          - row "Teresa Park South 5 yrs 95" [ref=f11e1063] [cursor=pointer]:
+                            - cell "Teresa Park" [ref=f11e1064]:
+                              - button "Teresa Park" [ref=f11e1065]:
+                                - generic [ref=f11e1066]: Teresa Park
+                            - cell "South" [ref=f11e1067]
+                            - cell "5 yrs" [ref=f11e1068]
+                            - cell "95" [ref=f11e1069]
+                            - cell [ref=f11e1070]:
+                              - img [ref=f11e1071]
+                          - row "Tyler Kim Northeast 17 yrs 82" [ref=f11e1073] [cursor=pointer]:
+                            - cell "Tyler Kim" [ref=f11e1074]:
+                              - button "Tyler Kim" [ref=f11e1075]:
+                                - generic [ref=f11e1076]: Tyler Kim
+                            - cell "Northeast" [ref=f11e1077]
+                            - cell "17 yrs" [ref=f11e1078]
+                            - cell "82" [ref=f11e1079]
+                            - cell [ref=f11e1080]:
+                              - img [ref=f11e1081]

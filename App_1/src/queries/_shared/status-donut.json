@@ -1,0 +1,22 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "width": "container",
+    "height": "container",
+    "mark": { "type": "arc", "innerRadius": 58, "cornerRadius": 2, "tooltip": true },
+    "encoding": {
+        "theta": { "field": "ClaimCount", "type": "quantitative", "stack": true },
+        "color": {
+            "field": "Claim_Status",
+            "type": "nominal",
+            "scale": {
+                "domain": ["Open", "Under Review", "Closed"],
+                "range": ["#b7791f", "#2563eb", "#15803d"]
+            },
+            "legend": { "title": null, "orient": "right" }
+        },
+        "tooltip": [
+            { "field": "Claim_Status", "type": "nominal", "title": "Status" },
+            { "field": "ClaimCount", "type": "quantitative", "title": "Claims" }
+        ]
+    }
+}

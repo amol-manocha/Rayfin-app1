@@ -1,0 +1,685 @@
+- generic [ref=e9]:
+  - list [ref=e11]:
+    - listitem
+    - listitem
+    - listitem [ref=e12]:
+      - generic [ref=e14] [cursor=pointer]: Skip to main content
+  - banner [ref=e18]:
+    - generic [ref=e19]:
+      - button "App launcher" [ref=e21] [cursor=pointer]:
+        - img [ref=e24]
+      - link "Go to your default landing page" [ref=e27] [cursor=pointer]
+      - button "App_1, General" [ref=e29] [cursor=pointer]:
+        - generic [ref=e30]: App_1
+        - generic [ref=e35]:
+          - generic [ref=e36]:
+            - img [ref=e38]
+            - img [ref=e41]
+          - generic [ref=e43]: General
+        - img [ref=e44]: 
+    - generic [ref=e46]:
+      - img [ref=e48]
+      - textbox "Global search" [ref=e50]:
+        - /placeholder: Search
+    - generic [ref=e52]:
+      - generic [ref=e53]:
+        - button "Focus mode" [ref=e54] [cursor=pointer]:
+          - img [ref=e57]
+        - button "Notifications" [ref=e59] [cursor=pointer]:
+          - img [ref=e62]
+          - generic [ref=e64]: "3"
+        - button "Settings" [ref=e65] [cursor=pointer]:
+          - img [ref=e68]
+        - button "Download" [ref=e70] [cursor=pointer]:
+          - img [ref=e73]
+        - button "Help & Support" [ref=e75] [cursor=pointer]:
+          - img [ref=e78]
+        - button "Help improve Fabric (preview)" [ref=e80] [cursor=pointer]:
+          - img [ref=e83]
+      - button "Account manager for" [ref=e87] [cursor=pointer]
+  - generic [ref=e96]:
+    - navigation [ref=e99]:
+      - menu "Sidebar" [ref=e100]:
+        - generic [ref=e101]:
+          - menuitem "Home" [ref=e103] [cursor=pointer]:
+            - generic [ref=e104]:
+              - img [ref=e106]
+              - generic [ref=e108]: Home
+          - generic [ref=e109]:
+            - menuitem "Copilot" [ref=e110] [cursor=pointer]:
+              - generic [ref=e113]: Copilot
+            - menuitem "Unpin Copilot" [ref=e114] [cursor=pointer]:
+              - img [ref=e117]
+          - generic [ref=e119]:
+            - menuitem "Create" [ref=e120] [cursor=pointer]:
+              - generic [ref=e121]:
+                - img [ref=e123]
+                - generic [ref=e125]: Create
+            - menuitem "Unpin Create" [ref=e126] [cursor=pointer]:
+              - img [ref=e129]
+          - generic [ref=e131]:
+            - menuitem "OneLake catalog" [ref=e132] [cursor=pointer]:
+              - generic [ref=e133]:
+                - img [ref=e135]
+                - generic [ref=e137]: OneLake catalog
+            - menuitem "Unpin OneLake catalog" [ref=e138] [cursor=pointer]:
+              - img [ref=e141]
+          - generic [ref=e143]:
+            - menuitem "Apps" [ref=e144] [cursor=pointer]:
+              - generic [ref=e145]:
+                - img [ref=e147]
+                - generic [ref=e149]: Apps
+            - menuitem "Unpin Apps" [ref=e150] [cursor=pointer]:
+              - img [ref=e153]
+          - separator [ref=e155]
+          - menuitem "Workspaces" [ref=e158] [cursor=pointer]:
+            - generic [ref=e159]:
+              - img [ref=e161]
+              - generic [ref=e163]: Workspaces
+          - menuitem "Amol_dev" [ref=e166] [cursor=pointer]:
+            - generic [ref=e170]: Amol_dev
+          - generic [ref=e171]:
+            - separator [ref=e172]
+            - menuitem "- Amol_dev" [ref=e175] [cursor=pointer]:
+              - button [ref=e177]:
+                - generic "Close" [ref=e178]:
+                  - img [ref=e180]
+            - menuitem "App_1 - Amol_dev" [ref=e185] [cursor=pointer]:
+              - generic [ref=e186]:
+                - button [ref=e187]:
+                  - generic "Close" [ref=e188]:
+                    - img [ref=e190]
+                - generic [ref=e193]: App_1
+            - menuitem "More options" [ref=e195] [cursor=pointer]:
+              - img [ref=e198]
+        - menuitem "Power BI" [ref=e203] [cursor=pointer]:
+          - generic [ref=e206]: Power BI
+    - main [ref=e208]:
+      - iframe [active] [ref=e214]:
+        - generic [ref=f20e7]:
+          - complementary [ref=f20e8]:
+            - toolbar "Ribbon" [ref=f20e9]:
+              - generic [ref=f20e13]:
+                - generic:
+                  - generic:
+                    - generic "Ribbon Tabs"
+                - generic [ref=f20e14]:
+                  - button "Open" [ref=f20e15]:
+                    - img [ref=f20e17]
+                    - generic [ref=f20e19]: Open
+                  - button "Refresh" [ref=f20e20]:
+                    - img [ref=f20e22]
+                    - generic [ref=f20e24]: Refresh
+                  - button "Manage app" [ref=f20e25]:
+                    - generic [ref=f20e26]: Manage app
+                  - button "Share" [ref=f20e27]:
+                    - img [ref=f20e29]
+                    - text: Share
+                    - img [ref=f20e32]
+          - iframe [active] [ref=f20e37]:
+            - generic [ref=f21e3]:
+              - complementary [ref=f21e4]:
+                - generic [ref=f21e5]:
+                  - img [ref=f21e7]
+                  - generic [ref=f21e10]:
+                    - paragraph [ref=f21e11]: Claims Insight
+                    - paragraph [ref=f21e12]: Investigation workbench
+                - navigation [ref=f21e13]:
+                  - button "Book Overview" [ref=f21e14]:
+                    - img [ref=f21e15]
+                    - generic [ref=f21e20]: Book Overview
+                  - button "Adjuster Directory" [ref=f21e21]:
+                    - img [ref=f21e22]
+                    - generic [ref=f21e27]: Adjuster Directory
+                - button "Collapse navigation" [ref=f21e28]:
+                  - img [ref=f21e29]
+                  - generic [ref=f21e32]: Collapse
+              - generic [ref=f21e33]:
+                - banner [ref=f21e34]:
+                  - navigation "Breadcrumb" [ref=f21e36]:
+                    - list [ref=f21e37]:
+                      - listitem [ref=f21e38]:
+                        - generic [ref=f21e39]: Book Overview
+                  - generic [ref=f21e40]:
+                    - generic [ref=f21e41]:
+                      - img [ref=f21e42]
+                      - textbox "Search claims, customers, adjusters…" [active] [ref=f21e45]
+                    - paragraph [ref=f21e843]: Start typing to find a claim, customer, or adjuster.
+                  - button "Switch to dark mode" [ref=f21e46]:
+                    - img [ref=f21e47]
+                - main [ref=f21e49]:
+                  - generic [ref=f21e50]:
+                    - generic [ref=f21e51]:
+                      - heading "Book Overview" [level=1] [ref=f21e52]
+                      - paragraph [ref=f21e53]: The health of the claims book at a glance — trends, exposure, and where to look next.
+                    - generic [ref=f21e54]:
+                      - generic [ref=f21e55]:
+                        - generic [ref=f21e56]:
+                          - paragraph [ref=f21e57]: Total Claims
+                          - generic [ref=f21e58]:
+                            - img [ref=f21e59]
+                            - text: 7.9%
+                        - paragraph [ref=f21e62]: 2,020
+                        - img [ref=f21e63]
+                      - generic [ref=f21e66]:
+                        - generic [ref=f21e67]:
+                          - paragraph [ref=f21e68]: Total Claim Amount
+                          - generic [ref=f21e69]:
+                            - img [ref=f21e70]
+                            - text: 9.4%
+                        - paragraph [ref=f21e73]: $38.4M
+                        - img [ref=f21e74]
+                      - generic [ref=f21e77]:
+                        - generic [ref=f21e78]:
+                          - paragraph [ref=f21e79]: Open Claims
+                          - generic [ref=f21e80]:
+                            - img [ref=f21e81]
+                            - text: 57.5%
+                        - paragraph [ref=f21e84]: "357"
+                        - img [ref=f21e85]
+                      - generic [ref=f21e88]:
+                        - generic [ref=f21e89]:
+                          - paragraph [ref=f21e90]: Open Rate
+                          - generic [ref=f21e91]:
+                            - img [ref=f21e92]
+                            - text: 71.0%
+                        - paragraph [ref=f21e95]: 17.7%
+                        - img [ref=f21e96]
+                      - generic [ref=f21e99]:
+                        - generic [ref=f21e100]:
+                          - paragraph [ref=f21e101]: Active Exposure
+                          - generic [ref=f21e102]:
+                            - img [ref=f21e103]
+                            - text: 27.3%
+                        - paragraph [ref=f21e106]: $11.2M
+                        - img [ref=f21e107]
+                    - generic [ref=f21e110]:
+                      - generic [ref=f21e112]:
+                        - generic [ref=f21e113]:
+                          - generic [ref=f21e114]:
+                            - heading "Claims over time" [level=3] [ref=f21e115]
+                            - paragraph [ref=f21e116]: Claim volume by month
+                          - tablist "Trend metric" [ref=f21e118]:
+                            - tab "Volume" [selected] [ref=f21e119]
+                            - tab "Amount" [ref=f21e120]
+                        - generic "Vega visualization" [ref=f21e124]:
+                          - img [ref=f21e125]:
+                            - generic [ref=f21e130]:
+                              - generic "X-axis for a time scale with values from Thursday, 01 February 2024, 12:00:00 AM to Sunday, 01 March 2026, 12:00:00 AM" [ref=f21e134]:
+                                - generic [ref=f21e136]:
+                                  - generic:
+                                    - generic: April
+                                    - generic: July
+                                    - generic: October
+                                    - generic: "2025"
+                                    - generic: April
+                                    - generic: July
+                                    - generic: October
+                                    - generic: "2026"
+                              - generic "Y-axis for a linear scale with values from 0 to 200" [ref=f21e137]:
+                                - generic [ref=f21e139]:
+                                  - generic:
+                                    - generic: "0"
+                                    - generic: "50"
+                                    - generic: "100"
+                                    - generic: "150"
+                                    - generic: "200"
+                              - 'generic "MonthStart: Feb 01, 2024; ClaimCount: 1; Month: Feb 2024; Claims: 1" [ref=f21e141]'
+                              - 'generic "MonthStart: Feb 01, 2024; ClaimCount: 1; Month: Feb 2024; Claims: 1" [ref=f21e143]'
+                              - generic [ref=f21e144]:
+                                - 'generic "MonthStart: Feb 01, 2024; ClaimCount: 1"'
+                                - 'generic "MonthStart: Mar 01, 2024; ClaimCount: 2"'
+                                - 'generic "MonthStart: Apr 01, 2024; ClaimCount: 1"'
+                                - 'generic "MonthStart: May 01, 2024; ClaimCount: 2"'
+                                - 'generic "MonthStart: Jun 01, 2024; ClaimCount: 2"'
+                                - 'generic "MonthStart: Jul 01, 2024; ClaimCount: 2"'
+                                - 'generic "MonthStart: Aug 01, 2024; ClaimCount: 2"'
+                                - 'generic "MonthStart: Sep 01, 2024; ClaimCount: 2"'
+                                - 'generic "MonthStart: Oct 01, 2024; ClaimCount: 2"'
+                                - 'generic "MonthStart: Nov 01, 2024; ClaimCount: 2"'
+                                - 'generic "MonthStart: Dec 01, 2024; ClaimCount: 2"'
+                                - 'generic "MonthStart: Jan 01, 2025; ClaimCount: 169"'
+                                - 'generic "MonthStart: Feb 01, 2025; ClaimCount: 148"'
+                                - 'generic "MonthStart: Mar 01, 2025; ClaimCount: 122"'
+                                - 'generic "MonthStart: Apr 01, 2025; ClaimCount: 96"'
+                                - 'generic "MonthStart: May 01, 2025; ClaimCount: 114"'
+                                - 'generic "MonthStart: Jun 01, 2025; ClaimCount: 119"'
+                                - 'generic "MonthStart: Jul 01, 2025; ClaimCount: 157"'
+                                - 'generic "MonthStart: Aug 01, 2025; ClaimCount: 120"'
+                                - 'generic "MonthStart: Sep 01, 2025; ClaimCount: 121"'
+                                - 'generic "MonthStart: Oct 01, 2025; ClaimCount: 127"'
+                                - 'generic "MonthStart: Nov 01, 2025; ClaimCount: 123"'
+                                - 'generic "MonthStart: Dec 01, 2025; ClaimCount: 158"'
+                                - 'generic "MonthStart: Jan 01, 2026; ClaimCount: 159"'
+                                - 'generic "MonthStart: Feb 01, 2026; ClaimCount: 139"'
+                                - 'generic "MonthStart: Mar 01, 2026; ClaimCount: 128"'
+                      - generic [ref=f21e173]:
+                        - generic [ref=f21e175]:
+                          - heading "Claims by status" [level=3] [ref=f21e176]
+                          - paragraph [ref=f21e177]: Distribution across the active book
+                        - generic [ref=f21e179]:
+                          - generic [ref=f21e180]:
+                            - generic "Vega visualization" [ref=f21e182]:
+                              - img [ref=f21e183]:
+                                - generic [ref=f21e187]:
+                                  - generic [ref=f21e188]:
+                                    - 'generic "ClaimCount: 236; Claim_Status: Under Review; Status: Under Review; Claims: 236" [ref=f21e189]'
+                                    - 'generic "ClaimCount: 1427; Claim_Status: Closed; Status: Closed; Claims: 1,427" [ref=f21e190]'
+                                    - 'generic "ClaimCount: 357; Claim_Status: Open; Status: Open; Claims: 357" [ref=f21e191]'
+                                  - 'generic "Symbol legend for fill color with 3 values: Open, Under Review, Closed" [ref=f21e192]':
+                                    - generic [ref=f21e198]:
+                                      - generic [ref=f21e200]:
+                                        - generic:
+                                          - generic: Open
+                                      - generic [ref=f21e202]:
+                                        - generic:
+                                          - generic: Under Review
+                                      - generic [ref=f21e204]:
+                                        - generic:
+                                          - generic: Closed
+                            - generic:
+                              - generic: 2,020
+                              - generic: claims
+                          - list [ref=f21e205]:
+                            - listitem [ref=f21e206]:
+                              - generic [ref=f21e208]: Open
+                              - generic [ref=f21e209]: "357"
+                              - generic [ref=f21e210]: 17.7%
+                            - listitem [ref=f21e211]:
+                              - generic [ref=f21e213]: Under Review
+                              - generic [ref=f21e214]: "236"
+                              - generic [ref=f21e215]: 11.7%
+                            - listitem [ref=f21e216]:
+                              - generic [ref=f21e218]: Closed
+                              - generic [ref=f21e219]: 1,427
+                              - generic [ref=f21e220]: 70.6%
+                    - generic [ref=f21e221]:
+                      - generic [ref=f21e223]:
+                        - generic [ref=f21e225]:
+                          - heading "Claim amount by region" [level=3] [ref=f21e226]
+                          - paragraph [ref=f21e227]: Where exposure concentrates
+                        - generic "Vega visualization" [ref=f21e231]:
+                          - img [ref=f21e232]:
+                            - generic [ref=f21e237]:
+                              - generic "X-axis for a linear scale with values from 0 to 12,000,000" [ref=f21e238]:
+                                - generic [ref=f21e240]:
+                                  - generic:
+                                    - generic: "0"
+                                    - generic: 2,000,000
+                                    - generic: 4,000,000
+                                    - generic: 6,000,000
+                                    - generic: 8,000,000
+                                    - generic: 10,000,000
+                                    - generic: 12,000,000
+                              - 'generic "Y-axis for a discrete scale with 4 values: South, Northeast, West, Midwest" [ref=f21e241]':
+                                - generic [ref=f21e243]:
+                                  - generic:
+                                    - generic: South
+                                    - generic: Northeast
+                                    - generic: West
+                                    - generic: Midwest
+                              - generic [ref=f21e244]:
+                                - 'generic "TotalAmount: 11360900; Region: South" [ref=f21e252]'
+                                - 'generic "TotalAmount: 10883000; Region: Northeast" [ref=f21e261]'
+                                - 'generic "TotalAmount: 8260350; Region: West" [ref=f21e270]'
+                                - 'generic "TotalAmount: 7870600; Region: Midwest" [ref=f21e279]'
+                              - generic [ref=f21e281]:
+                                - 'generic "TotalAmount: 11360900; Region: South" [ref=f21e282]': …
+                                - 'generic "TotalAmount: 10883000; Region: Northeast" [ref=f21e283]': $…
+                                - 'generic "TotalAmount: 8260350; Region: West" [ref=f21e284]': $8,260,350
+                                - 'generic "TotalAmount: 7870600; Region: Midwest" [ref=f21e285]': $7,870,600
+                      - generic [ref=f21e287]:
+                        - generic [ref=f21e289]:
+                          - heading "Claims by type" [level=3] [ref=f21e290]
+                          - paragraph [ref=f21e291]: Volume across claim categories
+                        - generic "Vega visualization" [ref=f21e295]:
+                          - img [ref=f21e296]:
+                            - generic [ref=f21e301]:
+                              - 'generic "X-axis for a discrete scale with 6 values: Collision, Glass Damage, Liability, Weather, Theft, Vandalism" [ref=f21e302]':
+                                - generic [ref=f21e304]:
+                                  - generic:
+                                    - generic: Collision
+                                    - generic: Glass Damage
+                                    - generic: Liability
+                                    - generic: Weather
+                                    - generic: Theft
+                                    - generic: Vandalism
+                              - generic "Y-axis for a linear scale with values from 0 to 700" [ref=f21e305]:
+                                - generic [ref=f21e307]:
+                                  - generic:
+                                    - generic: "0"
+                                    - generic: "100"
+                                    - generic: "200"
+                                    - generic: "300"
+                                    - generic: "400"
+                                    - generic: "500"
+                                    - generic: "600"
+                                    - generic: "700"
+                              - generic [ref=f21e308]:
+                                - 'generic "Claim_Type_Name: Collision; ClaimCount: 699" [ref=f21e316]'
+                                - 'generic "Claim_Type_Name: Glass Damage; ClaimCount: 396" [ref=f21e325]'
+                                - 'generic "Claim_Type_Name: Liability; ClaimCount: 315" [ref=f21e334]'
+                                - 'generic "Claim_Type_Name: Weather; ClaimCount: 235" [ref=f21e343]'
+                                - 'generic "Claim_Type_Name: Theft; ClaimCount: 195" [ref=f21e352]'
+                                - 'generic "Claim_Type_Name: Vandalism; ClaimCount: 180" [ref=f21e361]'
+                              - generic [ref=f21e363]:
+                                - 'generic "Claim_Type_Name: Collision; ClaimCount: 699" [ref=f21e364]': "699"
+                                - 'generic "Claim_Type_Name: Glass Damage; ClaimCount: 396" [ref=f21e365]': "396"
+                                - 'generic "Claim_Type_Name: Liability; ClaimCount: 315" [ref=f21e366]': "315"
+                                - 'generic "Claim_Type_Name: Weather; ClaimCount: 235" [ref=f21e367]': "235"
+                                - 'generic "Claim_Type_Name: Theft; ClaimCount: 195" [ref=f21e368]': "195"
+                                - 'generic "Claim_Type_Name: Vandalism; ClaimCount: 180" [ref=f21e369]': "180"
+                      - generic [ref=f21e371]:
+                        - generic [ref=f21e373]:
+                          - heading "High-frequency filers" [level=3] [ref=f21e374]
+                          - paragraph [ref=f21e375]: Customers with the most claims on file
+                        - list [ref=f21e377]:
+                          - listitem [ref=f21e378]:
+                            - generic [ref=f21e379]:
+                              - button "Silas Cruz" [ref=f21e380]:
+                                - generic [ref=f21e381]: Silas Cruz
+                              - generic [ref=f21e382]: $323,150
+                            - generic [ref=f21e386]: "23"
+                          - listitem [ref=f21e387]:
+                            - generic [ref=f21e388]:
+                              - button "Ethan Walker" [ref=f21e389]:
+                                - generic [ref=f21e390]: Ethan Walker
+                              - generic [ref=f21e391]: $340,850
+                            - generic [ref=f21e395]: "23"
+                          - listitem [ref=f21e396]:
+                            - generic [ref=f21e397]:
+                              - button "Aubrey Myers" [ref=f21e398]:
+                                - generic [ref=f21e399]: Aubrey Myers
+                              - generic [ref=f21e400]: $242,400
+                            - generic [ref=f21e404]: "21"
+                          - listitem [ref=f21e405]:
+                            - generic [ref=f21e406]:
+                              - button "Isabella Lewis" [ref=f21e407]:
+                                - generic [ref=f21e408]: Isabella Lewis
+                              - generic [ref=f21e409]: $388,650
+                            - generic [ref=f21e413]: "21"
+                          - listitem [ref=f21e414]:
+                            - generic [ref=f21e415]:
+                              - button "Ava Brown" [ref=f21e416]:
+                                - generic [ref=f21e417]: Ava Brown
+                              - generic [ref=f21e418]: $417,250
+                            - generic [ref=f21e422]: "20"
+                          - listitem [ref=f21e423]:
+                            - generic [ref=f21e424]:
+                              - button "Henry Kim" [ref=f21e425]:
+                                - generic [ref=f21e426]: Henry Kim
+                              - generic [ref=f21e427]: $503,650
+                            - generic [ref=f21e431]: "20"
+                          - listitem [ref=f21e432]:
+                            - generic [ref=f21e433]:
+                              - button "Camila Thompson" [ref=f21e434]:
+                                - generic [ref=f21e435]: Camila Thompson
+                              - generic [ref=f21e436]: $295,950
+                            - generic [ref=f21e440]: "20"
+                          - listitem [ref=f21e441]:
+                            - generic [ref=f21e442]:
+                              - button "Aaron Cruz" [ref=f21e443]:
+                                - generic [ref=f21e444]: Aaron Cruz
+                              - generic [ref=f21e445]: $313,100
+                            - generic [ref=f21e449]: "19"
+                          - listitem [ref=f21e450]:
+                            - generic [ref=f21e451]:
+                              - button "Avery Moore" [ref=f21e452]:
+                                - generic [ref=f21e453]: Avery Moore
+                              - generic [ref=f21e454]: $412,050
+                            - generic [ref=f21e458]: "19"
+                          - listitem [ref=f21e459]:
+                            - generic [ref=f21e460]:
+                              - button "Audrey Cooper" [ref=f21e461]:
+                                - generic [ref=f21e462]: Audrey Cooper
+                              - generic [ref=f21e463]: $410,350
+                            - generic [ref=f21e467]: "19"
+                          - listitem [ref=f21e468]:
+                            - generic [ref=f21e469]:
+                              - button "Bella Smith" [ref=f21e470]:
+                                - generic [ref=f21e471]: Bella Smith
+                              - generic [ref=f21e472]: $450,950
+                            - generic [ref=f21e476]: "19"
+                          - listitem [ref=f21e477]:
+                            - generic [ref=f21e478]:
+                              - button "Benjamin King" [ref=f21e479]:
+                                - generic [ref=f21e480]: Benjamin King
+                              - generic [ref=f21e481]: $283,750
+                            - generic [ref=f21e485]: "19"
+                          - listitem [ref=f21e486]:
+                            - generic [ref=f21e487]:
+                              - button "Ariana Howard" [ref=f21e488]:
+                                - generic [ref=f21e489]: Ariana Howard
+                              - generic [ref=f21e490]: $275,200
+                            - generic [ref=f21e494]: "19"
+                          - listitem [ref=f21e495]:
+                            - generic [ref=f21e496]:
+                              - button "Nicholas Hernandez" [ref=f21e497]:
+                                - generic [ref=f21e498]: Nicholas Hernandez
+                              - generic [ref=f21e499]: $345,700
+                            - generic [ref=f21e503]: "19"
+                    - generic [ref=f21e505]:
+                      - generic [ref=f21e507]:
+                        - heading "Largest open claims" [level=3] [ref=f21e508]
+                        - paragraph [ref=f21e509]: Highest-value claims still awaiting resolution
+                      - generic [ref=f21e511]:
+                        - generic "Vega visualization" [ref=f21e514]:
+                          - img [ref=f21e515]:
+                            - generic [ref=f21e520]:
+                              - generic "X-axis for a linear scale with values from 0 to 100,000" [ref=f21e521]:
+                                - generic [ref=f21e523]:
+                                  - generic:
+                                    - generic: "0"
+                                    - generic: 20,000
+                                    - generic: 40,000
+                                    - generic: 60,000
+                                    - generic: 80,000
+                                    - generic: 100,000
+                              - 'generic "Y-axis for a discrete scale with 12 values: 6915, 5050, 5762, 7011, 6712, ending with 6744" [ref=f21e524]':
+                                - generic [ref=f21e526]:
+                                  - generic:
+                                    - generic: Claim 6915
+                                    - generic: Claim 5050
+                                    - generic: Claim 5762
+                                    - generic: Claim 7011
+                                    - generic: Claim 6712
+                                    - generic: Claim 6041
+                                    - generic: Claim 6544
+                                    - generic: Claim 5041
+                                    - generic: Claim 6358
+                                    - generic: Claim 5181
+                                    - generic: Claim 6858
+                                    - generic: Claim 6744
+                              - generic [ref=f21e527]:
+                                - 'generic "Amount: 97450; Claim_ID: 6915" [ref=f21e535]'
+                                - 'generic "Amount: 95700; Claim_ID: 5050" [ref=f21e544]'
+                                - 'generic "Amount: 90700; Claim_ID: 5762" [ref=f21e553]'
+                                - 'generic "Amount: 88750; Claim_ID: 7011" [ref=f21e562]'
+                                - 'generic "Amount: 87900; Claim_ID: 6712" [ref=f21e571]'
+                                - 'generic "Amount: 84850; Claim_ID: 6041" [ref=f21e580]'
+                                - 'generic "Amount: 84450; Claim_ID: 6544" [ref=f21e589]'
+                                - 'generic "Amount: 81100; Claim_ID: 5041" [ref=f21e598]'
+                                - 'generic "Amount: 80050; Claim_ID: 6358" [ref=f21e607]'
+                                - 'generic "Amount: 78000; Claim_ID: 5181" [ref=f21e616]'
+                                - 'generic "Amount: 77000; Claim_ID: 6858" [ref=f21e625]'
+                                - 'generic "Amount: 76300; Claim_ID: 6744" [ref=f21e634]'
+                              - generic [ref=f21e636]:
+                                - 'generic "Amount: 97450; Claim_ID: 6915" [ref=f21e637]': …
+                                - 'generic "Amount: 95700; Claim_ID: 5050" [ref=f21e638]': …
+                                - 'generic "Amount: 90700; Claim_ID: 5762" [ref=f21e639]': $9…
+                                - 'generic "Amount: 88750; Claim_ID: 7011" [ref=f21e640]': $88,…
+                                - 'generic "Amount: 87900; Claim_ID: 6712" [ref=f21e641]': $87,…
+                                - 'generic "Amount: 84850; Claim_ID: 6041" [ref=f21e642]': $84,850
+                                - 'generic "Amount: 84450; Claim_ID: 6544" [ref=f21e643]': $84,450
+                                - 'generic "Amount: 81100; Claim_ID: 5041" [ref=f21e644]': $81,100
+                                - 'generic "Amount: 80050; Claim_ID: 6358" [ref=f21e645]': $80,050
+                                - 'generic "Amount: 78000; Claim_ID: 5181" [ref=f21e646]': $78,000
+                                - 'generic "Amount: 77000; Claim_ID: 6858" [ref=f21e647]': $77,000
+                                - 'generic "Amount: 76300; Claim_ID: 6744" [ref=f21e648]': $76,300
+                        - table [ref=f21e650]:
+                          - rowgroup [ref=f21e651]:
+                            - row "Claim Customer Type Status Filed Amount" [ref=f21e652]:
+                              - columnheader "Claim" [ref=f21e653]
+                              - columnheader "Customer" [ref=f21e654]
+                              - columnheader "Type" [ref=f21e655]
+                              - columnheader "Status" [ref=f21e656]
+                              - columnheader "Filed" [ref=f21e657]
+                              - columnheader "Amount" [ref=f21e658]
+                              - columnheader [ref=f21e659]
+                          - rowgroup [ref=f21e660]:
+                            - row "Claim 6915 Penelope Martinez Liability Open Mar 7, 2026 $97,450" [ref=f21e661] [cursor=pointer]:
+                              - cell "Claim 6915" [ref=f21e662]:
+                                - button "Claim 6915" [ref=f21e663]
+                              - cell "Penelope Martinez" [ref=f21e664]:
+                                - button "Penelope Martinez" [ref=f21e665]:
+                                  - generic [ref=f21e666]: Penelope Martinez
+                              - cell "Liability" [ref=f21e667]
+                              - cell "Open" [ref=f21e668]:
+                                - generic [ref=f21e669]: Open
+                              - cell "Mar 7, 2026" [ref=f21e671]
+                              - cell "$97,450" [ref=f21e672]
+                              - cell [ref=f21e673]:
+                                - img [ref=f21e674]
+                            - row "Claim 5050 Henry Kim Liability Open Jan 6, 2025 $95,700" [ref=f21e676] [cursor=pointer]:
+                              - cell "Claim 5050" [ref=f21e677]:
+                                - button "Claim 5050" [ref=f21e678]
+                              - cell "Henry Kim" [ref=f21e679]:
+                                - button "Henry Kim" [ref=f21e680]:
+                                  - generic [ref=f21e681]: Henry Kim
+                              - cell "Liability" [ref=f21e682]
+                              - cell "Open" [ref=f21e683]:
+                                - generic [ref=f21e684]: Open
+                              - cell "Jan 6, 2025" [ref=f21e686]
+                              - cell "$95,700" [ref=f21e687]
+                              - cell [ref=f21e688]:
+                                - img [ref=f21e689]
+                            - row "Claim 5762 Emma Johnson Liability Open Jun 22, 2025 $90,700" [ref=f21e691] [cursor=pointer]:
+                              - cell "Claim 5762" [ref=f21e692]:
+                                - button "Claim 5762" [ref=f21e693]
+                              - cell "Emma Johnson" [ref=f21e694]:
+                                - button "Emma Johnson" [ref=f21e695]:
+                                  - generic [ref=f21e696]: Emma Johnson
+                              - cell "Liability" [ref=f21e697]
+                              - cell "Open" [ref=f21e698]:
+                                - generic [ref=f21e699]: Open
+                              - cell "Jun 22, 2025" [ref=f21e701]
+                              - cell "$90,700" [ref=f21e702]
+                              - cell [ref=f21e703]:
+                                - img [ref=f21e704]
+                            - row "Claim 7011 Axel King Liability Open Mar 29, 2026 $88,750" [ref=f21e706] [cursor=pointer]:
+                              - cell "Claim 7011" [ref=f21e707]:
+                                - button "Claim 7011" [ref=f21e708]
+                              - cell "Axel King" [ref=f21e709]:
+                                - button "Axel King" [ref=f21e710]:
+                                  - generic [ref=f21e711]: Axel King
+                              - cell "Liability" [ref=f21e712]
+                              - cell "Open" [ref=f21e713]:
+                                - generic [ref=f21e714]: Open
+                              - cell "Mar 29, 2026" [ref=f21e716]
+                              - cell "$88,750" [ref=f21e717]
+                              - cell [ref=f21e718]:
+                                - img [ref=f21e719]
+                            - row "Claim 6712 Abigail Young Liability Open Jan 26, 2026 $87,900" [ref=f21e721] [cursor=pointer]:
+                              - cell "Claim 6712" [ref=f21e722]:
+                                - button "Claim 6712" [ref=f21e723]
+                              - cell "Abigail Young" [ref=f21e724]:
+                                - button "Abigail Young" [ref=f21e725]:
+                                  - generic [ref=f21e726]: Abigail Young
+                              - cell "Liability" [ref=f21e727]
+                              - cell "Open" [ref=f21e728]:
+                                - generic [ref=f21e729]: Open
+                              - cell "Jan 26, 2026" [ref=f21e731]
+                              - cell "$87,900" [ref=f21e732]
+                              - cell [ref=f21e733]:
+                                - img [ref=f21e734]
+                            - row "Claim 6041 Evan Gray Liability Open Aug 25, 2025 $84,850" [ref=f21e736] [cursor=pointer]:
+                              - cell "Claim 6041" [ref=f21e737]:
+                                - button "Claim 6041" [ref=f21e738]
+                              - cell "Evan Gray" [ref=f21e739]:
+                                - button "Evan Gray" [ref=f21e740]:
+                                  - generic [ref=f21e741]: Evan Gray
+                              - cell "Liability" [ref=f21e742]
+                              - cell "Open" [ref=f21e743]:
+                                - generic [ref=f21e744]: Open
+                              - cell "Aug 25, 2025" [ref=f21e746]
+                              - cell "$84,850" [ref=f21e747]
+                              - cell [ref=f21e748]:
+                                - img [ref=f21e749]
+                            - row "Claim 6544 Thomas Morgan Liability Open Dec 21, 2025 $84,450" [ref=f21e751] [cursor=pointer]:
+                              - cell "Claim 6544" [ref=f21e752]:
+                                - button "Claim 6544" [ref=f21e753]
+                              - cell "Thomas Morgan" [ref=f21e754]:
+                                - button "Thomas Morgan" [ref=f21e755]:
+                                  - generic [ref=f21e756]: Thomas Morgan
+                              - cell "Liability" [ref=f21e757]
+                              - cell "Open" [ref=f21e758]:
+                                - generic [ref=f21e759]: Open
+                              - cell "Dec 21, 2025" [ref=f21e761]
+                              - cell "$84,450" [ref=f21e762]
+                              - cell [ref=f21e763]:
+                                - img [ref=f21e764]
+                            - row "Claim 5041 Matthew Torres Liability Open Jan 5, 2025 $81,100" [ref=f21e766] [cursor=pointer]:
+                              - cell "Claim 5041" [ref=f21e767]:
+                                - button "Claim 5041" [ref=f21e768]
+                              - cell "Matthew Torres" [ref=f21e769]:
+                                - button "Matthew Torres" [ref=f21e770]:
+                                  - generic [ref=f21e771]: Matthew Torres
+                              - cell "Liability" [ref=f21e772]
+                              - cell "Open" [ref=f21e773]:
+                                - generic [ref=f21e774]: Open
+                              - cell "Jan 5, 2025" [ref=f21e776]
+                              - cell "$81,100" [ref=f21e777]
+                              - cell [ref=f21e778]:
+                                - img [ref=f21e779]
+                            - row "Claim 6358 Piper Mitchell Liability Open Nov 11, 2025 $80,050" [ref=f21e781] [cursor=pointer]:
+                              - cell "Claim 6358" [ref=f21e782]:
+                                - button "Claim 6358" [ref=f21e783]
+                              - cell "Piper Mitchell" [ref=f21e784]:
+                                - button "Piper Mitchell" [ref=f21e785]:
+                                  - generic [ref=f21e786]: Piper Mitchell
+                              - cell "Liability" [ref=f21e787]
+                              - cell "Open" [ref=f21e788]:
+                                - generic [ref=f21e789]: Open
+                              - cell "Nov 11, 2025" [ref=f21e791]
+                              - cell "$80,050" [ref=f21e792]
+                              - cell [ref=f21e793]:
+                                - img [ref=f21e794]
+                            - row "Claim 5181 Sadie Martin Liability Open Jan 30, 2025 $78,000" [ref=f21e796] [cursor=pointer]:
+                              - cell "Claim 5181" [ref=f21e797]:
+                                - button "Claim 5181" [ref=f21e798]
+                              - cell "Sadie Martin" [ref=f21e799]:
+                                - button "Sadie Martin" [ref=f21e800]:
+                                  - generic [ref=f21e801]: Sadie Martin
+                              - cell "Liability" [ref=f21e802]
+                              - cell "Open" [ref=f21e803]:
+                                - generic [ref=f21e804]: Open
+                              - cell "Jan 30, 2025" [ref=f21e806]
+                              - cell "$78,000" [ref=f21e807]
+                              - cell [ref=f21e808]:
+                                - img [ref=f21e809]
+                            - row "Claim 6858 Henry Kim Liability Open Feb 21, 2026 $77,000" [ref=f21e811] [cursor=pointer]:
+                              - cell "Claim 6858" [ref=f21e812]:
+                                - button "Claim 6858" [ref=f21e813]
+                              - cell "Henry Kim" [ref=f21e814]:
+                                - button "Henry Kim" [ref=f21e815]:
+                                  - generic [ref=f21e816]: Henry Kim
+                              - cell "Liability" [ref=f21e817]
+                              - cell "Open" [ref=f21e818]:
+                                - generic [ref=f21e819]: Open
+                              - cell "Feb 21, 2026" [ref=f21e821]
+                              - cell "$77,000" [ref=f21e822]
+                              - cell [ref=f21e823]:
+                                - img [ref=f21e824]
+                            - row "Claim 6744 Sophia Richardson Liability Open Jan 30, 2026 $76,300" [ref=f21e826] [cursor=pointer]:
+                              - cell "Claim 6744" [ref=f21e827]:
+                                - button "Claim 6744" [ref=f21e828]
+                              - cell "Sophia Richardson" [ref=f21e829]:
+                                - button "Sophia Richardson" [ref=f21e830]:
+                                  - generic [ref=f21e831]: Sophia Richardson
+                              - cell "Liability" [ref=f21e832]
+                              - cell "Open" [ref=f21e833]:
+                                - generic [ref=f21e834]: Open
+                              - cell "Jan 30, 2026" [ref=f21e836]
+                              - cell "$76,300" [ref=f21e837]
+                              - cell [ref=f21e838]:
+                                - img [ref=f21e839]

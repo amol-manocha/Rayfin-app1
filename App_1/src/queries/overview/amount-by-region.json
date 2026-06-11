@@ -1,0 +1,25 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "width": "container",
+    "height": "container",
+    "encoding": {
+        "y": {
+            "field": "Region",
+            "type": "nominal",
+            "sort": "-x",
+            "axis": { "title": null, "labelFontWeight": 600 }
+        },
+        "x": {
+            "field": "TotalAmount",
+            "type": "quantitative",
+            "axis": { "title": null, "grid": false }
+        }
+    },
+    "layer": [
+        { "mark": { "type": "bar", "cornerRadiusEnd": 4, "tooltip": true } },
+        {
+            "mark": { "type": "text", "style": "labelHorizontal" },
+            "encoding": { "text": { "field": "TotalAmount", "type": "quantitative" } }
+        }
+    ]
+}

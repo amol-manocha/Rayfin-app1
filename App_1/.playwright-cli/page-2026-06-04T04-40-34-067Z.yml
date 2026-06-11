@@ -1,0 +1,247 @@
+- generic [ref=e3]:
+  - list [ref=e5]:
+    - listitem
+    - listitem
+    - listitem [ref=e6]:
+      - generic [ref=e8] [cursor=pointer]: Skip to main content
+  - banner [ref=e12]:
+    - generic [ref=e13]:
+      - button "App launcher" [ref=e15] [cursor=pointer]:
+        - img [ref=e18]
+      - link "Go to your default landing page" [ref=e21] [cursor=pointer]
+      - button "App_1, Confidential\\Internal Only" [ref=e23] [cursor=pointer]:
+        - generic [ref=e24]: App_1
+        - generic [ref=e29]:
+          - generic [ref=e30]:
+            - img [ref=e32]
+            - img [ref=e35]
+          - generic [ref=e37]: Confidential\Internal Only
+        - img [ref=e38]: 
+    - generic [ref=e40]:
+      - img [ref=e42]
+      - textbox "Global search" [ref=e44]:
+        - /placeholder: Search
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - button "Focus mode" [ref=e48] [cursor=pointer]:
+          - img [ref=e51]
+        - button "Notifications" [ref=e53] [cursor=pointer]:
+          - img [ref=e56]
+          - generic [ref=e58]: "3"
+        - button "Settings" [ref=e59] [cursor=pointer]:
+          - img [ref=e62]
+        - button "Download" [ref=e64] [cursor=pointer]:
+          - img [ref=e67]
+        - button "Settings" [ref=e69] [cursor=pointer]:
+          - img [ref=e72]
+      - button "Account manager for" [ref=e76] [cursor=pointer]
+  - generic [ref=e85]:
+    - navigation [ref=e88]:
+      - menu "Sidebar" [ref=e89]:
+        - generic [ref=e90]:
+          - menuitem "Home" [ref=e92] [cursor=pointer]:
+            - generic [ref=e93]:
+              - img [ref=e95]
+              - generic [ref=e97]: Home
+          - generic [ref=e98]:
+            - menuitem "Copilot" [ref=e99] [cursor=pointer]:
+              - generic [ref=e102]: Copilot
+            - menuitem "Unpin Copilot" [ref=e103] [cursor=pointer]:
+              - img [ref=e106]
+          - generic [ref=e108]:
+            - menuitem "Create" [ref=e109] [cursor=pointer]:
+              - generic [ref=e110]:
+                - img [ref=e112]
+                - generic [ref=e114]: Create
+            - menuitem "Unpin Create" [ref=e115] [cursor=pointer]:
+              - img [ref=e118]
+          - generic [ref=e120]:
+            - menuitem "OneLake catalog" [ref=e121] [cursor=pointer]:
+              - generic [ref=e122]:
+                - img [ref=e124]
+                - generic [ref=e126]: OneLake catalog
+            - menuitem "Unpin OneLake catalog" [ref=e127] [cursor=pointer]:
+              - img [ref=e130]
+          - generic [ref=e132]:
+            - menuitem "Apps" [ref=e133] [cursor=pointer]:
+              - generic [ref=e134]:
+                - img [ref=e136]
+                - generic [ref=e138]: Apps
+            - menuitem "Unpin Apps" [ref=e139] [cursor=pointer]:
+              - img [ref=e142]
+          - generic [ref=e144]:
+            - menuitem "Scorecards" [ref=e145] [cursor=pointer]:
+              - generic [ref=e146]:
+                - img [ref=e148]
+                - generic [ref=e150]: Scorecards
+            - menuitem "Unpin Scorecards" [ref=e151] [cursor=pointer]:
+              - img [ref=e154]
+          - separator [ref=e156]
+          - menuitem "Workspaces" [ref=e159] [cursor=pointer]:
+            - generic [ref=e160]:
+              - img [ref=e162]
+              - generic [ref=e164]: Workspaces
+          - menuitem "Amol_dev" [ref=e167] [cursor=pointer]:
+            - generic [ref=e171]: Amol_dev
+          - generic [ref=e172]:
+            - separator [ref=e173]
+            - menuitem "App_1 - Amol_dev" [ref=e176] [cursor=pointer]:
+              - generic [ref=e177]:
+                - button [ref=e178]:
+                  - generic "Close" [ref=e179]:
+                    - img [ref=e181]
+                - generic [ref=e184]: App_1
+            - menuitem "More options" [ref=e186] [cursor=pointer]:
+              - img [ref=e189]
+        - menuitem "Power BI" [ref=e194] [cursor=pointer]:
+          - generic [ref=e197]: Power BI
+    - main [ref=e199]:
+      - iframe [active] [ref=e205]:
+        - generic [ref=f3e7]:
+          - complementary [ref=f3e8]:
+            - toolbar "Ribbon" [ref=f3e9]:
+              - generic [ref=f3e13]:
+                - generic:
+                  - generic:
+                    - generic "Ribbon Tabs"
+                - generic [ref=f3e14]:
+                  - button "Open" [ref=f3e15]:
+                    - img [ref=f3e17]
+                    - generic [ref=f3e19]: Open
+                  - button "Refresh" [ref=f3e20]:
+                    - img [ref=f3e22]
+                    - generic [ref=f3e24]: Refresh
+                  - button "Manage app" [ref=f3e25]:
+                    - generic [ref=f3e26]: Manage app
+                  - button "Share" [ref=f3e27]:
+                    - img [ref=f3e29]
+                    - text: Share
+                    - img [ref=f3e32]
+          - iframe [active] [ref=f3e37]:
+            - generic [ref=f4e3]:
+              - complementary [ref=f4e4]:
+                - generic [ref=f4e5]:
+                  - img [ref=f4e7]
+                  - generic [ref=f4e10]:
+                    - paragraph [ref=f4e11]: Claims Insight
+                    - paragraph [ref=f4e12]: Investigation workbench
+                - navigation [ref=f4e13]:
+                  - button "Book Overview" [ref=f4e14]:
+                    - img [ref=f4e15]
+                    - generic [ref=f4e20]: Book Overview
+                  - button "Adjuster Directory" [ref=f4e21]:
+                    - img [ref=f4e22]
+                    - generic [ref=f4e27]: Adjuster Directory
+                - button "Collapse navigation" [ref=f4e28]:
+                  - img [ref=f4e29]
+                  - generic [ref=f4e32]: Collapse
+              - generic [ref=f4e33]:
+                - banner [ref=f4e34]:
+                  - navigation "Breadcrumb" [ref=f4e36]:
+                    - list [ref=f4e37]:
+                      - listitem [ref=f4e38]:
+                        - generic [ref=f4e39]: Book Overview
+                  - generic [ref=f4e41]:
+                    - img [ref=f4e42]
+                    - textbox "Search claims, customers, adjusters…" [ref=f4e45]
+                  - button "Switch to light mode" [active] [ref=f4e203]:
+                    - img [ref=f4e204]
+                - main [ref=f4e49]:
+                  - generic [ref=f4e50]:
+                    - generic [ref=f4e51]:
+                      - heading "Book Overview" [level=1] [ref=f4e52]
+                      - paragraph [ref=f4e53]: The health of the claims book at a glance — trends, exposure, and where to look next.
+                    - generic [ref=f4e54]:
+                      - generic [ref=f4e55]:
+                        - paragraph [ref=f4e57]: Total Claims
+                        - paragraph [ref=f4e58]: "0"
+                      - generic [ref=f4e60]:
+                        - paragraph [ref=f4e62]: Total Claim Amount
+                        - paragraph [ref=f4e63]: $0
+                      - generic [ref=f4e65]:
+                        - paragraph [ref=f4e67]: Open Claims
+                        - paragraph [ref=f4e68]: "0"
+                      - generic [ref=f4e70]:
+                        - paragraph [ref=f4e72]: Open Rate
+                        - paragraph [ref=f4e73]: 0.0%
+                      - generic [ref=f4e75]:
+                        - paragraph [ref=f4e77]: Active Exposure
+                        - paragraph [ref=f4e78]: $0
+                    - generic [ref=f4e80]:
+                      - generic [ref=f4e82]:
+                        - generic [ref=f4e83]:
+                          - generic [ref=f4e84]:
+                            - heading "Claims over time" [level=3] [ref=f4e85]
+                            - paragraph [ref=f4e86]: Claim volume by month
+                          - tablist "Trend metric" [ref=f4e88]:
+                            - tab "Volume" [selected] [ref=f4e89]
+                            - tab "Amount" [ref=f4e90]
+                        - alert [ref=f4e93]:
+                          - img [ref=f4e94]
+                          - generic [ref=f4e96]:
+                            - paragraph [ref=f4e97]: Couldn't reach the claims model
+                            - paragraph [ref=f4e98]: "Network error: Failed to fetch"
+                          - button "Retry" [ref=f4e99]:
+                            - img [ref=f4e100]
+                            - text: Retry
+                      - generic [ref=f4e106]:
+                        - generic [ref=f4e108]:
+                          - heading "Claims by status" [level=3] [ref=f4e109]
+                          - paragraph [ref=f4e110]: Distribution across the active book
+                        - alert [ref=f4e112]:
+                          - img [ref=f4e113]
+                          - generic [ref=f4e115]:
+                            - paragraph [ref=f4e116]: Couldn't reach the claims model
+                            - paragraph [ref=f4e117]: "Network error: Failed to fetch"
+                          - button "Retry" [ref=f4e118]:
+                            - img [ref=f4e119]
+                            - text: Retry
+                    - generic [ref=f4e124]:
+                      - generic [ref=f4e126]:
+                        - generic [ref=f4e128]:
+                          - heading "Claim amount by region" [level=3] [ref=f4e129]
+                          - paragraph [ref=f4e130]: Where exposure concentrates
+                        - alert [ref=f4e133]:
+                          - img [ref=f4e134]
+                          - generic [ref=f4e136]:
+                            - paragraph [ref=f4e137]: Couldn't reach the claims model
+                            - paragraph [ref=f4e138]: "Network error: Failed to fetch"
+                          - button "Retry" [ref=f4e139]:
+                            - img [ref=f4e140]
+                            - text: Retry
+                      - generic [ref=f4e146]:
+                        - generic [ref=f4e148]:
+                          - heading "Claims by type" [level=3] [ref=f4e149]
+                          - paragraph [ref=f4e150]: Volume across claim categories
+                        - alert [ref=f4e153]:
+                          - img [ref=f4e154]
+                          - generic [ref=f4e156]:
+                            - paragraph [ref=f4e157]: Couldn't reach the claims model
+                            - paragraph [ref=f4e158]: "Network error: Failed to fetch"
+                          - button "Retry" [ref=f4e159]:
+                            - img [ref=f4e160]
+                            - text: Retry
+                      - generic [ref=f4e166]:
+                        - generic [ref=f4e168]:
+                          - heading "High-frequency filers" [level=3] [ref=f4e169]
+                          - paragraph [ref=f4e170]: Customers with the most claims on file
+                        - alert [ref=f4e172]:
+                          - img [ref=f4e173]
+                          - generic [ref=f4e175]:
+                            - paragraph [ref=f4e176]: Couldn't reach the claims model
+                            - paragraph [ref=f4e177]: "Network error: Failed to fetch"
+                          - button "Retry" [ref=f4e178]:
+                            - img [ref=f4e179]
+                            - text: Retry
+                    - generic [ref=f4e185]:
+                      - generic [ref=f4e187]:
+                        - heading "Largest open claims" [level=3] [ref=f4e188]
+                        - paragraph [ref=f4e189]: Highest-value claims still awaiting resolution
+                      - alert [ref=f4e191]:
+                        - img [ref=f4e192]
+                        - generic [ref=f4e194]:
+                          - paragraph [ref=f4e195]: Couldn't reach the claims model
+                          - paragraph [ref=f4e196]: "Network error: Failed to fetch"
+                        - button "Retry" [ref=f4e197]:
+                          - img [ref=f4e198]
+                          - text: Retry

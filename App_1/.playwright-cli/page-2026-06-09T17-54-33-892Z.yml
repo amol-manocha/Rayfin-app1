@@ -1,0 +1,31 @@
+- generic [ref=e5]:
+  - img "Organization background image" [ref=e6]
+  - generic [ref=e7]:
+    - generic [ref=e13]:
+      - img "Microsoft" [ref=e16]
+      - main [ref=e17]:
+        - generic [ref=e20]:
+          - heading "Pick an account" [level=1] [ref=e24]
+          - list "Pick an account" [ref=e27]:
+            - listitem [ref=e29] [cursor=pointer]:
+              - button "Sign in with amolmanocha@microsoft.com work or school account." [active] [ref=e30]:
+                - generic [ref=e33]:
+                  - generic [ref=e34]: Amol Manocha
+                  - generic [ref=e35]: amolmanocha@microsoft.com
+                  - generic [ref=e36]: Connected to Windows
+            - listitem [ref=e38] [cursor=pointer]:
+              - button "Sign in with admin@MngEnvMCAP693457.onmicrosoft.com work or school account." [ref=e39]:
+                - generic [ref=e42]:
+                  - generic [ref=e43]: System Administrator
+                  - generic [ref=e44]: admin@MngEnvMCAP693457.onmicrosoft.com
+                  - generic [ref=e45]: Connected to Windows
+            - listitem [ref=e46] [cursor=pointer]:
+              - button "Use another account" [ref=e47]:
+                - generic [ref=e51]: Use another account
+    - contentinfo [ref=e52]:
+      - generic [ref=e53]:
+        - link "Terms of use" [ref=e54] [cursor=pointer]:
+          - /url: https://www.microsoft.com/en-US/servicesagreement/
+        - link "Privacy & cookies" [ref=e55] [cursor=pointer]:
+          - /url: https://privacy.microsoft.com/en-US/privacystatement
+        - button "Click here for troubleshooting information" [ref=e56] [cursor=pointer]: ...

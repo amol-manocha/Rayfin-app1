@@ -1,0 +1,25 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "width": "container",
+    "height": "container",
+    "encoding": {
+        "y": {
+            "field": "Claim_ID",
+            "type": "nominal",
+            "sort": "-x",
+            "axis": { "title": null, "labelExpr": "'Claim ' + datum.label" }
+        },
+        "x": {
+            "field": "Amount",
+            "type": "quantitative",
+            "axis": { "title": null, "grid": false }
+        }
+    },
+    "layer": [
+        { "mark": { "type": "bar", "cornerRadiusEnd": 4, "tooltip": true } },
+        {
+            "mark": { "type": "text", "style": "labelHorizontal" },
+            "encoding": { "text": { "field": "Amount", "type": "quantitative" } }
+        }
+    ]
+}

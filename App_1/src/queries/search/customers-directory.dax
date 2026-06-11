@@ -1,0 +1,9 @@
+EVALUATE
+SUMMARIZECOLUMNS(
+    'customer_dim'[Customer_ID],
+    'customer_dim'[Customer_Name],
+    'customer_dim'[City],
+    'customer_dim'[State],
+    "ClaimCount", [Claim Count]
+)
+ORDER BY 'customer_dim'[Customer_Name] ASC
