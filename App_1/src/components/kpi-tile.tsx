@@ -44,6 +44,8 @@ export interface KpiTileProps {
     higherIsBetter?: boolean;
     spark?: number[];
     isLoading?: boolean;
+    /** Denser tile with a smaller value — for half-width / multi-tile blocks. */
+    compact?: boolean;
 }
 
 export function KpiTile({
@@ -54,15 +56,18 @@ export function KpiTile({
     higherIsBetter = true,
     spark,
     isLoading = false,
+    compact = false,
 }: KpiTileProps) {
     const animated = useCountUp(value);
 
     if (isLoading) {
         return (
-            <Card className="gap-s p-l">
+            <Card className={cn("gap-s", compact ? "p-m" : "p-l")}>
                 <Skeleton className="h-3 w-2/3" />
-                <Skeleton className="mt-s h-8 w-3/4" />
-                <Skeleton className="mt-m h-(--leading-hero-700) w-full" />
+                <Skeleton className={cn("mt-s w-3/4", compact ? "h-6" : "h-8")} />
+                {compact ? null : (
+                    <Skeleton className="mt-m h-(--leading-hero-700) w-full" />
+                )}
             </Card>
         );
     }
@@ -72,9 +77,16 @@ export function KpiTile({
     const good = positive === higherIsBetter;
 
     return (
-        <Card className="justify-between gap-m p-l">
+        <Card className={cn("justify-between", compact ? "gap-xs p-m" : "gap-m p-l")}>
             <div className="flex items-start justify-between gap-s">
-                <p className="text-[length:var(--text-200)] font-medium uppercase tracking-wide text-muted-foreground">
+                <p
+                    className={cn(
+                        "font-medium uppercase tracking-wide text-muted-foreground",
+                        compact
+                            ? "text-[length:var(--text-100)]"
+                            : "text-[length:var(--text-200)]",
+                    )}
+                >
                     {label}
                 </p>
                 {hasDelta ? (
@@ -97,7 +109,12 @@ export function KpiTile({
             </div>
 
             <p
-                className="tabular text-[length:var(--text-hero-800)] font-semibold leading-hero-800 text-foreground"
+                className={cn(
+                    "tabular font-semibold text-foreground",
+                    compact
+                        ? "text-[length:var(--text-600)] leading-600"
+                        : "text-[length:var(--text-hero-800)] leading-hero-800",
+                )}
                 aria-label={`${label}: ${render(value, format)}`}
             >
                 {render(animated, format)}
@@ -105,7 +122,7 @@ export function KpiTile({
 
             {spark && spark.length > 1 ? (
                 <Sparkline values={spark} />
-            ) : (
+            ) : compact ? null : (
                 <div className="h-(--leading-hero-700)" />
             )}
         </Card>

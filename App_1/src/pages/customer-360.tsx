@@ -13,6 +13,7 @@ import { TrendCard } from "@/components/trend-card";
 import { DataGridTable, type GridColumn } from "@/components/data-grid-table";
 import { StatusBadge } from "@/components/status-badge";
 import { ClaimLink, AdjusterLink } from "@/components/entity-link";
+import { AccidentNetworkCard } from "@/components/customer/accident-network-card";
 import { QueryState } from "@/components/states";
 import { useRouter } from "@/lib/router";
 import { useVisualQuery } from "@/hooks/use-visual-query";
@@ -118,29 +119,39 @@ export function Customer360Page({ customerId }: { customerId: string }) {
                 </Card>
             ) : null}
 
-            <div className="grid grid-cols-1 gap-l xl:grid-cols-[3fr_1fr]">
-                <div className="grid grid-cols-1 gap-l sm:grid-cols-2 xl:grid-cols-4">
-                    <KpiTile label="Total Claims" value={num(k?.ClaimCount)} format="number" isLoading={kpis.isLoading} />
-                    <KpiTile label="Total Amount" value={num(k?.TotalAmount)} format="currencyCompact" isLoading={kpis.isLoading} />
-                    <KpiTile label="Open Claims" value={num(k?.OpenCount)} format="number" isLoading={kpis.isLoading} />
-                    <KpiTile label="Average Claim" value={num(k?.AvgAmount)} format="currencyCompact" isLoading={kpis.isLoading} />
+            <div className="grid grid-cols-1 items-stretch gap-l lg:grid-cols-2">
+                {/* Left half — compact KPI grid + exposure gauge */}
+                <div className="flex flex-col gap-l">
+                    <div className="grid grid-cols-2 gap-m">
+                        <KpiTile label="Total Claims" value={num(k?.ClaimCount)} format="number" compact isLoading={kpis.isLoading} />
+                        <KpiTile label="Total Amount" value={num(k?.TotalAmount)} format="currencyCompact" compact isLoading={kpis.isLoading} />
+                        <KpiTile label="Open Claims" value={num(k?.OpenCount)} format="number" compact isLoading={kpis.isLoading} />
+                        <KpiTile label="Average Claim" value={num(k?.AvgAmount)} format="currencyCompact" compact isLoading={kpis.isLoading} />
+                    </div>
+                    <Card className="flex-1">
+                        <CardHeader title="Active exposure" subtitle="Open exposure vs total coverage" />
+                        <CardContent className="items-center justify-center">
+                            <QueryState
+                                isLoading={kpis.isLoading}
+                                isEmpty={kpis.isEmpty}
+                                error={kpis.error}
+                                onRetry={kpis.refetch}
+                            >
+                                <CoverageGauge
+                                    used={num(k?.Exposure)}
+                                    limit={num(k?.CoverageLimit)}
+                                />
+                            </QueryState>
+                        </CardContent>
+                    </Card>
                 </div>
-                <Card>
-                    <CardHeader title="Active exposure" subtitle="Open exposure vs total coverage" />
-                    <CardContent className="items-center justify-center">
-                        <QueryState
-                            isLoading={kpis.isLoading}
-                            isEmpty={kpis.isEmpty}
-                            error={kpis.error}
-                            onRetry={kpis.refetch}
-                        >
-                            <CoverageGauge
-                                used={num(k?.Exposure)}
-                                limit={num(k?.CoverageLimit)}
-                            />
-                        </QueryState>
-                    </CardContent>
-                </Card>
+
+                {/* Right half — accident network map */}
+                <AccidentNetworkCard
+                    className="h-full"
+                    customerId={customerId}
+                    customerName={str(person?.Customer_Name)}
+                />
             </div>
 
             <div className="grid grid-cols-1 gap-l lg:grid-cols-2">
