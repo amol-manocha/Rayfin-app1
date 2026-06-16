@@ -1,47 +1,157 @@
 
-# Fabric Apps - Analytics Template
+# Claims Insight
 
-> **⚠️ This repository is under active development.** Features and instructions may change.
+**Investigate any auto-insurance claim, customer, policy, or adjuster in seconds.**
 
-This is a starter template for building Fabric Apps - Analytics web apps. Clone this repo locally and follow the steps below to get started.
+Claims Insight is a professional investigation workbench for insurance claims professionals — adjusters, claims managers, and risk analysts. It surfaces data from a Microsoft Fabric semantic model as an interactive, task-oriented web app. Every screen answers a real question the moment it loads.
 
+![Platform](https://img.shields.io/badge/platform-Microsoft%20Fabric-blue)
+![Framework](https://img.shields.io/badge/framework-React%2019%20%2B%20Vite-purple)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-## Prerequisites
+---
 
-1. **Node.js (v22)**: Download and install from https://nodejs.org/dist/v22.22.2/node-v22.22.2-x64.msi
-2. **GitHub Copilot CLI**: Refer to https://github.com/github/copilot-cli
-3. **Playwright CLI**: Run `npm install -g @playwright/cli@latest` in Terminal
-4. **Azure CLI**: Install from https://learn.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest. After installation, run `az login` in your terminal to sign in to your Azure account.
+## What it does
 
+| Screen | Purpose |
+|--------|---------|
+| **Book Overview** | Home dashboard — KPI tiles with sparklines, claims-over-time area chart, status donut, regional bars, largest open claims, and high-frequency filers. |
+| **Claim 360** | Deep dive into a single claim — status badge, amount, coverage gauge, customer/vehicle/policy/adjuster context cards, and shared investigator notes. |
+| **Customer 360** | Full customer picture — claim history timeline, exposure breakdown, coverage utilization arc, and a clickable claims grid. |
+| **Adjuster 360** | Adjuster workload — claim count, status mix, amount-over-time trend, and a filterable roster of all adjusters. |
+| **Repair Shops** | Network performance — shop directory, specialty distribution, network-type donut, and trend sparklines. |
+| **Global Search** | Persistent command bar to find any claim, customer, or adjuster by name or ID. |
 
-## Instructions for building a new web app
-1. **Open Terminal**: Open Terminal in the local folder where you want to clone this repo and create your app.
-2. **Clone this repo**: Run `git clone <REPO_URL> <repo_name>`. Replace `<REPO_URL>` with this repository's URL and `<repo_name>` with the name you want for your project folder.
-3. **Navigate to the repo folder**: Run `cd <repo_name>`. (Optional: Run `code` to open VS Code in that folder and open Terminal inside VS Code.)
-4. **Install dependencies**: Run `npm install`.
-5. **Launch Copilot**: In the Command Prompt (cmd) or PowerShell terminal run `copilot` to start the Copilot CLI. Then type a prompt for what you want to build. Include the name or dataset ID of the semantic model (from Power BI Service) that you want to use. (To get the dataset ID, copy the value between `...dataset/` and `/overview...` from the URL)
-6. **Preview your app**: After LLM is done, run `npm run dev` in another terminal.
-7. **Open fabric shell**: Navigate to the workspace in fabric portal and open the artifact. Then append `&devUri=http://localhost:5173` at the end.
+---
 
-<details>
-<summary><strong>💡 Tips</strong></summary>
+## Tech stack
 
-- Use **Shift + Tab** in Copilot to switch to **Plan mode**, where Copilot will present a plan and ask for confirmation before writing any code.
+| Layer | Technology |
+|-------|-----------|
+| UI framework | React 19, TypeScript, Tailwind CSS 4 |
+| Build tool | Vite |
+| Charts & visuals | `@microsoft/fabric-visuals` (area, bar, donut, sparkline, gauge) |
+| Data grid | `@microsoft/fabric-datagrid` |
+| Data layer | DAX queries via `@microsoft/fabric-app-data` against a Fabric semantic model |
+| Write-back (notes) | Rayfin Data Service (GraphQL over MSSQL via Data API Builder) |
+| Auth | Microsoft Fabric authentication (`@microsoft/rayfin-auth-provider-fabric`) |
+| Hosting | Microsoft Fabric Apps |
 
-</details>
+---
 
-<details>
-<summary><strong>📝 Example prompts</strong></summary>
+## Project structure
 
-- `Create a sales performance dashboard using the "Contoso Sales" semantic model. Include revenue KPIs, a monthly trend line chart, top 10 stores by profit, and a regional breakdown bar chart.`
-- `Build an executive summary app for the "HR Analytics" model with headcount by department, attrition rate trends over the past 3 years, and a data grid of open positions sorted by days-to-fill.`
-- `I want a customer insights app using dataset ID 4053a155-34a9-4b74-9bc2-e162f1b27fc7. Show customer lifetime value distribution, churn risk segmentation, and a filterable table of top accounts.`
-- `Create a supply chain monitoring dashboard from the "Logistics Ops" model. I need inventory levels by warehouse, on-time delivery rate KPIs, and a heatmap of shipping delays by region and month.`
-- `Build a financial reporting app using the "GL Financials" semantic model with a P&L summary, expense breakdown by cost center, and quarter-over-quarter variance charts. Add a date range filter across all visuals.`
+```
+App_1/
+├── src/
+│   ├── pages/            # Top-level page components (book-overview, claim-360, etc.)
+│   ├── components/       # Reusable UI: cards, KPI tiles, charts, shell, search
+│   ├── queries/          # DAX query definitions organized by page
+│   ├── hooks/            # React hooks (auth, theme, semantic model queries, notes)
+│   ├── lib/              # Utilities — router, formatting, DAX helpers, Rayfin client
+│   └── services/         # Auth service integration
+├── rayfin/
+│   ├── rayfin.yml        # Rayfin config (data service enabled)
+│   └── data/             # Entity definitions for the notes backend
+├── fabric.yaml           # Fabric semantic model connection config
+├── vite.config.ts        # Vite build config
+└── package.json
+```
 
-</details>
+---
 
+## Getting started
 
-## Need help?
+### Prerequisites
 
-If you have any questions or run into any problems, please [file an issue](../../issues) on this repository.
+- **Node.js v22+** — [download](https://nodejs.org/)
+- **Azure CLI** — [install](https://learn.microsoft.com/cli/azure/install-azure-cli), then run `az login`
+- Access to a **Microsoft Fabric workspace** with the `autoclaims_sm` semantic model
+
+### Install & run locally
+
+```bash
+git clone https://github.com/amol-manocha/Rayfin-app1.git
+cd Rayfin-app1/App_1
+npm install
+npm run dev
+```
+
+The app starts at `http://localhost:5173`.
+
+### Preview inside Fabric
+
+1. Open the app artifact in the Fabric portal.
+2. Append `&devUri=http://localhost:5173` to the URL to connect your local dev server to the Fabric shell.
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Deploy to Fabric
+
+```bash
+npx rayfin up
+```
+
+---
+
+## Key features
+
+- **Animated KPI tiles** with trend sparklines and period-over-period deltas
+- **Interactive charts** — hover tooltips, click-to-drill from any visual into 360 pages
+- **Coverage utilization gauge** — radial arc with over-limit alert state (turns red)
+- **Shared claim notes** — investigators can add persistent, attributed notes to any claim
+- **Light & dark mode** — toggle in the top bar
+- **Breadcrumb navigation** — retrace your path (Book Overview › Customer 360 › Claim 6915)
+- **Status badges as filters** — toggle Open / Under Review / Closed
+
+---
+
+## Semantic model
+
+The app reads from the **`autoclaims_sm`** semantic model in Fabric. Key tables and measures:
+
+| Table | Key columns |
+|-------|-------------|
+| Claims | Claim_ID, Claim Date, Claim Amount, Claim Status, Claim Type |
+| Customer | Customer_ID, Name, City, State |
+| Policy | Policy_ID, Coverage Limit |
+| Adjuster | Adjuster_ID, Name, Region, Experience |
+| Repair Shop | Shop Name, Network Type, Specialty, City, State |
+
+**Measures:** `[Claim Count]`, `[Total Claim Amount]`, `[Open Claim Count]`, `[Average Claim Amount]`
+
+The connection is configured in `fabric.yaml` — update the `workspaceId` and `itemId` to point to your own semantic model.
+
+---
+
+## Claim Notes (write-back)
+
+The only write feature. Notes are stored server-side via Rayfin's Data Service (MSSQL-backed GraphQL). To enable:
+
+1. Ensure `services.data.enabled: true` in `rayfin/rayfin.yml`
+2. The entity is defined in `rayfin/data/claim-note.ts`
+3. Run `npx rayfin db apply` to provision the table
+4. Notes are attributed to the signed-in Fabric user automatically
+
+---
+
+## Scripts
+
+| Command | What it does |
+|---------|-------------|
+| `npm run dev` | Start local dev server (Vite, hot reload) |
+| `npm run build` | Production build |
+| `npm run preview` | Preview production build locally |
+| `npm run lint` | Run ESLint |
+| `npm run test` | Run unit tests (Vitest) |
+| `npm run test:fabric` | Open the app in the Fabric portal shell |
+
+---
+
+## License
+
+MIT
