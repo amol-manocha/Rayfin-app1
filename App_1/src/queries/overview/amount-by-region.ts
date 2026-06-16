@@ -6,7 +6,7 @@ import spec from "./amount-by-region.json";
 const connection = "autoclaims";
 
 const columnMetadata: ColumnMetadataMap = {
-    "adjuster_dim[Region]": { name: "Region", displayName: "Region" },
+    "Adjuster[Region]": { name: "Region", displayName: "Region" },
     "[TotalAmount]": { name: "TotalAmount", displayName: "Total Claim Amount", format: "$#,0" },
     "[ClaimCount]": { name: "ClaimCount", displayName: "Claims", format: "#,0" },
 };

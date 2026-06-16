@@ -7,6 +7,7 @@
 import type { ReactNode } from "react";
 import { useState } from "react";
 import {
+    Building2,
     LayoutDashboard,
     Moon,
     PanelLeftClose,
@@ -34,6 +35,12 @@ const NAV_ITEMS: NavItem[] = [
         icon: LayoutDashboard,
         route: { name: "overview" },
         matches: (r) => r.name === "overview" || r.name === "claim" || r.name === "customer",
+    },
+    {
+        label: "Repair Shops",
+        icon: Building2,
+        route: { name: "repair-shops" },
+        matches: (r) => r.name === "repair-shops",
     },
     {
         label: "Adjuster Directory",

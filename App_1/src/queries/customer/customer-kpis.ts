@@ -18,12 +18,12 @@ export function customerKpis(customerId: string) {
     const query = `
 EVALUATE
 ROW(
-    "ClaimCount", CALCULATE([Claim Count], 'claims_fact'[Customer_ID] = ${id}),
-    "TotalAmount", CALCULATE([Total Claim Amount], 'claims_fact'[Customer_ID] = ${id}),
-    "OpenCount", CALCULATE([Open Claim Count], 'claims_fact'[Customer_ID] = ${id}),
-    "AvgAmount", CALCULATE([Average Claim Amount], 'claims_fact'[Customer_ID] = ${id}),
-    "Exposure", CALCULATE([Total Claim Amount], 'claims_fact'[Customer_ID] = ${id}, 'claims_fact'[Claim_Status] IN { "Open", "Under Review" }),
-    "CoverageLimit", CALCULATE(SUM('policy_dim'[Coverage_Limit]), 'policy_dim'[Customer_ID] = ${id})
+    "ClaimCount", CALCULATE([Claim Count], 'Claims'[Customer ID] = ${id}),
+    "TotalAmount", CALCULATE([Total Claim Amount], 'Claims'[Customer ID] = ${id}),
+    "OpenCount", CALCULATE([Open Claim Count], 'Claims'[Customer ID] = ${id}),
+    "AvgAmount", CALCULATE([Average Claim Amount], 'Claims'[Customer ID] = ${id}),
+    "Exposure", CALCULATE([Total Claim Amount], 'Claims'[Customer ID] = ${id}, 'Claims'[Claim Status] IN { "Open", "Under Review" }),
+    "CoverageLimit", CALCULATE(SUM('Policy'[Coverage Limit]), 'Policy'[Customer ID] = ${id})
 )`.trim();
 
     return { connection, query, columnMetadata };

@@ -6,7 +6,7 @@ import spec from "./status-mix.json";
 const connection = "autoclaims";
 
 const columnMetadata: ColumnMetadataMap = {
-    "claims_fact[Claim_Status]": { name: "Claim_Status", displayName: "Status" },
+    "Claims[Claim Status]": { name: "Claim_Status", displayName: "Status" },
     "[ClaimCount]": { name: "ClaimCount", displayName: "Claims", format: "#,0" },
 };
 

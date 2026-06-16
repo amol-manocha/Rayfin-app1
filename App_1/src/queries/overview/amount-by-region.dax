@@ -2,7 +2,7 @@ EVALUATE
 TOPN(
     20,
     SUMMARIZECOLUMNS(
-        'adjuster_dim'[Region],
+        'Adjuster'[Region],
         "TotalAmount", [Total Claim Amount],
         "ClaimCount", [Claim Count]
     ),

@@ -4,5 +4,5 @@ ROW(
     "Total Claim Amount", [Total Claim Amount],
     "Open Claim Count", [Open Claim Count],
     "Open Claim Rate", [Open Claim Rate],
-    "Exposure", CALCULATE([Total Claim Amount], 'claims_fact'[Claim_Status] IN { "Open", "Under Review" })
+    "Exposure", CALCULATE([Total Claim Amount], 'Claims'[Claim Status] IN { "Open", "Under Review" })
 )

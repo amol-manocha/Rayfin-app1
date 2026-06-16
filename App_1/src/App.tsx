@@ -6,6 +6,7 @@
 import { RouterProvider, useRouter } from "@/lib/router";
 import { AppShell } from "@/components/app-shell";
 import { BookOverviewPage } from "@/pages/book-overview";
+import { RepairShopsPage } from "@/pages/repair-shops";
 import { Claim360Page } from "@/pages/claim-360";
 import { Customer360Page } from "@/pages/customer-360";
 import { Adjuster360Page } from "@/pages/adjuster-360";
@@ -15,6 +16,8 @@ function CurrentPage() {
     switch (route.name) {
         case "overview":
             return <BookOverviewPage />;
+        case "repair-shops":
+            return <RepairShopsPage />;
         case "claim":
             return <Claim360Page claimId={route.id} />;
         case "customer":

@@ -6,7 +6,7 @@ import donutSpec from "@/queries/_shared/status-donut.json";
 const connection = "autoclaims";
 
 const columnMetadata: ColumnMetadataMap = {
-    "claims_fact[Claim_Status]": { name: "Claim_Status", displayName: "Status" },
+    "Claims[Claim Status]": { name: "Claim_Status", displayName: "Status" },
     "[ClaimCount]": { name: "ClaimCount", displayName: "Claims", format: "#,0" },
 };
 
@@ -16,10 +16,10 @@ export function adjusterStatusMix(adjusterId: number) {
 EVALUATE
 CALCULATETABLE(
     SUMMARIZECOLUMNS(
-        'claims_fact'[Claim_Status],
+        'Claims'[Claim Status],
         "ClaimCount", [Claim Count]
     ),
-    'claims_fact'[Adjuster_ID] = ${daxInt(adjusterId)}
+    'Claims'[Adjuster ID] = ${daxInt(adjusterId)}
 )`.trim();
 
     return {

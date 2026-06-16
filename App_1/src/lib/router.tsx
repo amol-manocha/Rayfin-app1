@@ -15,6 +15,7 @@ import {
 
 export type Route =
     | { name: "overview" }
+    | { name: "repair-shops" }
     | { name: "claim"; id: number; label?: string }
     | { name: "customer"; id: string; label?: string }
     | { name: "adjuster"; id?: number; label?: string };
@@ -39,6 +40,8 @@ function defaultLabel(route: Route): string {
     switch (route.name) {
         case "overview":
             return "Book Overview";
+        case "repair-shops":
+            return "Repair Shops";
         case "claim":
             return route.label ?? `Claim ${route.id}`;
         case "customer":
@@ -50,7 +53,7 @@ function defaultLabel(route: Route): string {
 
 function sameRoute(a: Route, b: Route): boolean {
     if (a.name !== b.name) return false;
-    if (a.name === "overview") return true;
+    if (a.name === "overview" || a.name === "repair-shops") return a.name === b.name;
     return String((a as { id?: unknown }).id) === String((b as { id?: unknown }).id);
 }
 

@@ -6,7 +6,7 @@ import spec from "./claims-by-type.json";
 const connection = "autoclaims";
 
 const columnMetadata: ColumnMetadataMap = {
-    "claimtype_dim[Claim_Type_Name]": { name: "Claim_Type_Name", displayName: "Claim Type" },
+    "Claim Type[Claim Type Name]": { name: "Claim_Type_Name", displayName: "Claim Type" },
     "[ClaimCount]": { name: "ClaimCount", displayName: "Claims", format: "#,0" },
     "[TotalAmount]": { name: "TotalAmount", displayName: "Total Claim Amount", format: "$#,0" },
 };

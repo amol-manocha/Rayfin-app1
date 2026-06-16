@@ -1,5 +1,5 @@
 EVALUATE
 SUMMARIZECOLUMNS(
-    'claims_fact'[Claim_Status],
+    'Claims'[Claim Status],
     "ClaimCount", [Claim Count]
 )

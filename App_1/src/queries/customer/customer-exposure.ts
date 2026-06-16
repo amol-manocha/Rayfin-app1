@@ -6,7 +6,7 @@ import barSpec from "@/queries/_shared/status-bar.json";
 const connection = "autoclaims";
 
 const columnMetadata: ColumnMetadataMap = {
-    "claims_fact[Claim_Status]": { name: "Claim_Status", displayName: "Status" },
+    "Claims[Claim Status]": { name: "Claim_Status", displayName: "Status" },
     "[Amount]": { name: "Amount", displayName: "Claim Amount", format: "$#,0" },
     "[ClaimCount]": { name: "ClaimCount", displayName: "Claims", format: "#,0" },
 };
@@ -17,11 +17,11 @@ export function customerExposure(customerId: string) {
 EVALUATE
 CALCULATETABLE(
     SUMMARIZECOLUMNS(
-        'claims_fact'[Claim_Status],
+        'Claims'[Claim Status],
         "Amount", [Total Claim Amount],
         "ClaimCount", [Claim Count]
     ),
-    'claims_fact'[Customer_ID] = ${daxString(customerId)}
+    'Claims'[Customer ID] = ${daxString(customerId)}
 )`.trim();
 
     return {

@@ -22,12 +22,12 @@ EVALUATE
 ADDCOLUMNS(
     GROUPBY(
         ADDCOLUMNS(
-            FILTER('claims_fact', 'claims_fact'[Customer_ID] = ${id}),
-            "MonthStart", DATE(YEAR('claims_fact'[Claim_Date]), MONTH('claims_fact'[Claim_Date]), 1)
+            FILTER('Claims', 'Claims'[Customer ID] = ${id}),
+            "MonthStart", DATE(YEAR('Claims'[Claim Date]), MONTH('Claims'[Claim Date]), 1)
         ),
         [MonthStart],
         "ClaimCount", SUMX(CURRENTGROUP(), 1),
-        "TotalAmount", SUMX(CURRENTGROUP(), 'claims_fact'[Claim_Amount])
+        "TotalAmount", SUMX(CURRENTGROUP(), 'Claims'[Claim Amount])
     ),
     "MonthLabel", FORMAT([MonthStart], "MMM YYYY")
 )

@@ -10,10 +10,15 @@ import { Skeleton } from "./states";
 import { useCountUp } from "@/hooks/use-count-up";
 import { cn } from "@/lib/utils";
 
-export type KpiFormat = "number" | "currency" | "currencyCompact" | "percent";
+export type KpiFormat = "number" | "decimal1" | "currency" | "currencyCompact" | "percent";
 
 function render(value: number, format: KpiFormat): string {
     switch (format) {
+        case "decimal1":
+            return value.toLocaleString("en-US", {
+                minimumFractionDigits: 1,
+                maximumFractionDigits: 1,
+            });
         case "currency":
             return value.toLocaleString("en-US", {
                 style: "currency",

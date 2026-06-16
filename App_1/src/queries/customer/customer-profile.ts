@@ -18,14 +18,14 @@ export function customerProfile(customerId: string) {
     const query = `
 EVALUATE
 SELECTCOLUMNS(
-    FILTER('customer_dim', 'customer_dim'[Customer_ID] = ${daxString(customerId)}),
-    "Customer_Name", 'customer_dim'[Customer_Name],
-    "Customer_Age", 'customer_dim'[Customer_Age],
-    "Gender", 'customer_dim'[Gender],
-    "Address", 'customer_dim'[Address],
-    "City", 'customer_dim'[City],
-    "State", 'customer_dim'[State],
-    "DOB", 'customer_dim'[Date_of_Birth]
+    FILTER('Customer', 'Customer'[Customer ID] = ${daxString(customerId)}),
+    "Customer_Name", 'Customer'[Customer Name],
+    "Customer_Age", 'Customer'[Customer Age],
+    "Gender", 'Customer'[Gender],
+    "Address", 'Customer'[Address],
+    "City", 'Customer'[City],
+    "State", 'Customer'[State],
+    "DOB", 'Customer'[Date of Birth]
 )`.trim();
 
     return { connection, query, columnMetadata };

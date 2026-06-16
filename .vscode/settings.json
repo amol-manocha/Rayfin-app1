@@ -1,6 +1,13 @@
 {
     "chat.tools.terminal.autoApprove": {
-        "npx fabric-app-data": true
+        "npx fabric-app-data": true,
+        "Test-Path": true,
+        "New-Item": true,
+        "Out-Null": true,
+        "ConvertFrom-Json": true,
+        "Add-Member": true,
+        "ConvertTo-Json": true,
+        "Set-Content": true
     },
     "chat.agentSkillsLocations": {
         ".agents/skills": true,
@@ -9,6 +16,7 @@
         "~/.agents/skills": true,
         "~/.copilot/skills": true,
         "~/.claude/skills": true,
-        "~/.vscode/extensions/synapsevscode.synapse-1.24.0/copilot/skills": true
+        "~/.vscode/extensions/synapsevscode.synapse-1.24.0/copilot/skills": true,
+        "~/.vscode/extensions/synapsevscode.synapse-1.25.0/copilot/skills": true
     }
 }

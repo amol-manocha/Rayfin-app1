@@ -15,8 +15,8 @@ export function claimContext(claimType: string) {
 EVALUATE
 ROW(
     "OverallAvg", [Average Claim Amount],
-    "TypeAvg", CALCULATE([Average Claim Amount], 'claimtype_dim'[Claim_Type_Name] = ${daxString(claimType)}),
-    "TypeMax", CALCULATE(MAX('claims_fact'[Claim_Amount]), 'claimtype_dim'[Claim_Type_Name] = ${daxString(claimType)})
+    "TypeAvg", CALCULATE([Average Claim Amount], 'Claim Type'[Claim Type Name] = ${daxString(claimType)}),
+    "TypeMax", CALCULATE(MAX('Claims'[Claim Amount]), 'Claim Type'[Claim Type Name] = ${daxString(claimType)})
 )`.trim();
 
     return { connection, query, columnMetadata };

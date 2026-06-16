@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "width": "container",
+  "height": "container",
+  "mark": { "type": "arc", "innerRadius": 58, "cornerRadius": 2, "tooltip": true },
+  "encoding": {
+    "theta": { "field": "ClaimCount", "type": "quantitative", "stack": true },
+    "color": {
+      "field": "Network_Type",
+      "type": "nominal",
+      "legend": null,
+      "scale": {
+        "domain": ["Independent", "Partner", "Preferred"],
+        "range": ["#4c78a8", "#f58518", "#e45756"]
+      }
+    },
+    "tooltip": [
+      { "field": "Network_Type", "type": "nominal", "title": "Network" },
+      { "field": "ClaimCount", "type": "quantitative", "title": "Open claims" },
+      { "field": "TotalAmount", "type": "quantitative", "title": "Claim amount", "format": "$,.0f" },
+      { "field": "AvgRepairDays", "type": "quantitative", "title": "Avg repair days", "format": ".1f" }
+    ]
+  }
+}

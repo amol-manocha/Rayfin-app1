@@ -18,14 +18,14 @@ export function adjusterClaims(adjusterId: number) {
     const query = `
 EVALUATE
 SELECTCOLUMNS(
-    FILTER('claims_fact', 'claims_fact'[Adjuster_ID] = ${daxInt(adjusterId)}),
-    "Claim_ID", 'claims_fact'[Claim_ID],
-    "Claim_Date", 'claims_fact'[Claim_Date],
-    "Customer_ID", 'claims_fact'[Customer_ID],
-    "Customer_Name", RELATED('customer_dim'[Customer_Name]),
-    "Claim_Type_Name", RELATED('claimtype_dim'[Claim_Type_Name]),
-    "Claim_Status", 'claims_fact'[Claim_Status],
-    "Amount", 'claims_fact'[Claim_Amount]
+    FILTER('Claims', 'Claims'[Adjuster ID] = ${daxInt(adjusterId)}),
+    "Claim_ID", 'Claims'[Claim ID],
+    "Claim_Date", 'Claims'[Claim Date],
+    "Customer_ID", 'Claims'[Customer ID],
+    "Customer_Name", RELATED('Customer'[Customer Name]),
+    "Claim_Type_Name", RELATED('Claim Type'[Claim Type Name]),
+    "Claim_Status", 'Claims'[Claim Status],
+    "Amount", 'Claims'[Claim Amount]
 )
 ORDER BY [Claim_Date] DESC`.trim();
 

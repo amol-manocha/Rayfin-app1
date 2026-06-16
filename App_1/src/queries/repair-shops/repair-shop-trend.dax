@@ -1,0 +1,31 @@
+EVALUATE
+VAR ClaimsWithMonth =
+    ADDCOLUMNS(
+        'Claims',
+        "MonthStart", DATE(YEAR('Claims'[Claim Date]), MONTH('Claims'[Claim Date]), 1),
+        "ShopName", RELATED('Repair Shop'[Shop Name]),
+        "ShopRepairDays", RELATED('Repair Shop'[Avg Repair Days])
+    )
+VAR MonthKeys = SUMMARIZE(ClaimsWithMonth, [MonthStart])
+VAR Result =
+    ADDCOLUMNS(
+        MonthKeys,
+        "ClaimCount",
+            VAR m = [MonthStart]
+            RETURN COUNTROWS(FILTER(ClaimsWithMonth, [MonthStart] = m)),
+        "TotalAmount",
+            VAR m = [MonthStart]
+            RETURN SUMX(FILTER(ClaimsWithMonth, [MonthStart] = m), 'Claims'[Claim Amount]),
+        "ShopCount",
+            VAR m = [MonthStart]
+            RETURN COUNTROWS(SUMMARIZE(FILTER(ClaimsWithMonth, [MonthStart] = m), [ShopName])),
+        "AvgRepairDays",
+            VAR m = [MonthStart]
+            RETURN AVERAGEX(FILTER(ClaimsWithMonth, [MonthStart] = m), [ShopRepairDays]),
+        "NoShopCount",
+            VAR m = [MonthStart]
+            RETURN COUNTROWS(FILTER(ClaimsWithMonth, [MonthStart] = m && ISBLANK([ShopName]))) + 0
+    )
+RETURN
+    ADDCOLUMNS(Result, "MonthLabel", FORMAT([MonthStart], "MMM YYYY"))
+ORDER BY [MonthStart]

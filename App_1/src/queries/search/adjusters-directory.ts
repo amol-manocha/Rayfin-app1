@@ -4,10 +4,10 @@ import baseQuery from "./adjusters-directory.dax?raw";
 const connection = "autoclaims";
 
 const columnMetadata: ColumnMetadataMap = {
-    "adjuster_dim[Adjuster_ID]": { name: "Adjuster_ID", displayName: "Adjuster ID", format: "0" },
-    "adjuster_dim[Adjuster_Name]": { name: "Adjuster_Name", displayName: "Adjuster" },
-    "adjuster_dim[Region]": { name: "Region", displayName: "Region" },
-    "adjuster_dim[Experience_Years]": { name: "Experience_Years", displayName: "Experience (yrs)", format: "#,0" },
+    "Adjuster[Adjuster ID]": { name: "Adjuster_ID", displayName: "Adjuster ID", format: "0" },
+    "Adjuster[Adjuster Name]": { name: "Adjuster_Name", displayName: "Adjuster" },
+    "Adjuster[Region]": { name: "Region", displayName: "Region" },
+    "Adjuster[Experience Years]": { name: "Experience_Years", displayName: "Experience (yrs)", format: "#,0" },
     "[ClaimCount]": { name: "ClaimCount", displayName: "Claims", format: "#,0" },
     "[OpenAmount]": { name: "OpenAmount", displayName: "Open Claim Amount", format: "$#,0" },
 };

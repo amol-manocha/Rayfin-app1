@@ -20,14 +20,14 @@ export function adjusterDetail(adjusterId: number) {
     const query = `
 EVALUATE
 ROW(
-    "Adjuster_Name", CALCULATE(SELECTEDVALUE('adjuster_dim'[Adjuster_Name]), 'adjuster_dim'[Adjuster_ID] = ${id}),
-    "Region", CALCULATE(SELECTEDVALUE('adjuster_dim'[Region]), 'adjuster_dim'[Adjuster_ID] = ${id}),
-    "Experience", CALCULATE(SELECTEDVALUE('adjuster_dim'[Experience_Years]), 'adjuster_dim'[Adjuster_ID] = ${id}),
-    "ClaimCount", CALCULATE([Claim Count], 'claims_fact'[Adjuster_ID] = ${id}),
-    "TotalAmount", CALCULATE([Total Claim Amount], 'claims_fact'[Adjuster_ID] = ${id}),
-    "OpenCount", CALCULATE([Open Claim Count], 'claims_fact'[Adjuster_ID] = ${id}),
-    "ClosedCount", CALCULATE([Closed Claim Count], 'claims_fact'[Adjuster_ID] = ${id}),
-    "AvgAmount", CALCULATE([Average Claim Amount], 'claims_fact'[Adjuster_ID] = ${id})
+    "Adjuster_Name", CALCULATE(SELECTEDVALUE('Adjuster'[Adjuster Name]), 'Adjuster'[Adjuster ID] = ${id}),
+    "Region", CALCULATE(SELECTEDVALUE('Adjuster'[Region]), 'Adjuster'[Adjuster ID] = ${id}),
+    "Experience", CALCULATE(SELECTEDVALUE('Adjuster'[Experience Years]), 'Adjuster'[Adjuster ID] = ${id}),
+    "ClaimCount", CALCULATE([Claim Count], 'Claims'[Adjuster ID] = ${id}),
+    "TotalAmount", CALCULATE([Total Claim Amount], 'Claims'[Adjuster ID] = ${id}),
+    "OpenCount", CALCULATE([Open Claim Count], 'Claims'[Adjuster ID] = ${id}),
+    "ClosedCount", CALCULATE([Closed Claim Count], 'Claims'[Adjuster ID] = ${id}),
+    "AvgAmount", CALCULATE([Average Claim Amount], 'Claims'[Adjuster ID] = ${id})
 )`.trim();
 
     return { connection, query, columnMetadata };

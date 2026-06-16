@@ -2,14 +2,14 @@ EVALUATE
 ADDCOLUMNS(
     GROUPBY(
         ADDCOLUMNS(
-            'claims_fact',
-            "MonthStart", DATE(YEAR('claims_fact'[Claim_Date]), MONTH('claims_fact'[Claim_Date]), 1)
+            'Claims',
+            "MonthStart", DATE(YEAR('Claims'[Claim Date]), MONTH('Claims'[Claim Date]), 1)
         ),
         [MonthStart],
         "ClaimCount", SUMX(CURRENTGROUP(), 1),
-        "TotalAmount", SUMX(CURRENTGROUP(), 'claims_fact'[Claim_Amount]),
-        "OpenCount", SUMX(CURRENTGROUP(), IF('claims_fact'[Claim_Status] = "Open", 1, 0)),
-        "Exposure", SUMX(CURRENTGROUP(), IF('claims_fact'[Claim_Status] = "Closed", 0, 'claims_fact'[Claim_Amount]))
+        "TotalAmount", SUMX(CURRENTGROUP(), 'Claims'[Claim Amount]),
+        "OpenCount", SUMX(CURRENTGROUP(), IF('Claims'[Claim Status] = "Open", 1, 0)),
+        "Exposure", SUMX(CURRENTGROUP(), IF('Claims'[Claim Status] = "Closed", 0, 'Claims'[Claim Amount]))
     ),
     "MonthLabel", FORMAT([MonthStart], "MMM YYYY")
 )

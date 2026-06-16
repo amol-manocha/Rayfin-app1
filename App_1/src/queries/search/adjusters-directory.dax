@@ -1,10 +1,10 @@
 EVALUATE
 SUMMARIZECOLUMNS(
-    'adjuster_dim'[Adjuster_ID],
-    'adjuster_dim'[Adjuster_Name],
-    'adjuster_dim'[Region],
-    'adjuster_dim'[Experience_Years],
+    'Adjuster'[Adjuster ID],
+    'Adjuster'[Adjuster Name],
+    'Adjuster'[Region],
+    'Adjuster'[Experience Years],
     "ClaimCount", [Claim Count],
-    "OpenAmount", CALCULATE([Total Claim Amount], 'claims_fact'[Claim_Status] = "Open")
+    "OpenAmount", CALCULATE([Total Claim Amount], 'Claims'[Claim Status] = "Open")
 )
-ORDER BY 'adjuster_dim'[Adjuster_Name] ASC
+ORDER BY 'Adjuster'[Adjuster Name] ASC

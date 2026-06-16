@@ -3,15 +3,15 @@ TOPN(
     12,
     CALCULATETABLE(
         SUMMARIZECOLUMNS(
-            'claims_fact'[Claim_ID],
-            'customer_dim'[Customer_ID],
-            'customer_dim'[Customer_Name],
-            'claimtype_dim'[Claim_Type_Name],
-            'claims_fact'[Claim_Status],
-            'claims_fact'[Claim_Date],
+            'Claims'[Claim ID],
+            'Customer'[Customer ID],
+            'Customer'[Customer Name],
+            'Claim Type'[Claim Type Name],
+            'Claims'[Claim Status],
+            'Claims'[Claim Date],
             "Amount", [Total Claim Amount]
         ),
-        'claims_fact'[Claim_Status] = "Open"
+        'Claims'[Claim Status] = "Open"
     ),
     [Amount], DESC
 )
